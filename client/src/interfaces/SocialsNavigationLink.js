@@ -1,5 +1,3 @@
-import '../sass/Modules.sass'
-
 const SocialsNavigationLink = ({ title, linkUrl, iconUrl }) => 
 {
     return(

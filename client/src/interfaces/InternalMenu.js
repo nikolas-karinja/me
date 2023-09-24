@@ -1,5 +1,3 @@
-import '../sass/Modules.sass'
-
 import profile_face1 from '../img/profile/face-1.JPG'
 
 import PageNavigationLink from './PageNavigationLink'

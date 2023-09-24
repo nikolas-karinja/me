@@ -1,4 +1,3 @@
-import '../../sass/Modules.sass'
 import '../../sass/Home.sass'
 
 import img_homeName from '../../img/home-name.png'
@@ -7,6 +6,7 @@ import HomeCred from '../HomeCred'
 import { Model as IBMPC5150Model } from '../../models/IBMPC5150'
 import { Model as LanuageStackModel } from '../../models/LanguageStack'
 import { Model as PencilModel } from '../../models/Pencil'
+import ProjectsSection from '../sections/ProjectsSection'
 
 const Home = () =>
 {
@@ -35,6 +35,7 @@ const Home = () =>
                         model={ <PencilModel 
                             scale={ 0.15 } /> } />
                 </div>
+                <ProjectsSection />
             </article>
         </div>
     )

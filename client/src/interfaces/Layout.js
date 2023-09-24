@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import '../sass/Modules.sass'
 
 import ExternalMenu from './ExternalMenu'
 import InternalMenu from './InternalMenu'

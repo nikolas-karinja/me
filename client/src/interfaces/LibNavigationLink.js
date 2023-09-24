@@ -1,5 +1,3 @@
-import '../sass/Modules.sass'
-
 const LibNavigationLink = ({ name, linkUrl }) => 
 {
     return(

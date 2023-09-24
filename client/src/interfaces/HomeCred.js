@@ -1,5 +1,4 @@
 import '../sass/Home.sass'
-import '../sass/Modules.sass'
 
 import icon_clickable from '../img/icons/clickable.svg'
 

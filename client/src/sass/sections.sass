@@ -1,0 +1,20 @@
+.Projects-section
+    &--row
+        margin: 1em auto 0px auto !important
+
+        display: grid
+        grid-auto-rows: 20em //min-content
+        grid-gap: 1em
+        grid-template-columns: 1fr 2fr
+        padding: 0px 9em 0px 3em
+
+        &.reversed
+            grid-template-columns: 2fr 1fr
+            padding: 0px 3em 0px 9em
+        
+    &--card
+        border: solid 1px #000
+        padding: 1em
+
+        &.darken
+            background: #f5f5f5

@@ -1,5 +1,3 @@
-import '../sass/Modules.sass'
-
 import icon_github from '../img/icons/github.svg'
 import icon_instagram from '../img/icons/instagram.svg'
 import icon_linkedin from '../img/icons/linkedin.svg'

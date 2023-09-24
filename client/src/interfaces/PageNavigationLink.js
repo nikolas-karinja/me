@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import '../sass/Modules.sass'
 
 const PageNavigationLink = ({ path, name }) => 
 {
