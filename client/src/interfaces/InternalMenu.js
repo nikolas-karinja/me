@@ -16,11 +16,12 @@ const InternalMenu = () =>
             </div>
             <div className='AsideColumnLayout-module--slot-center'>
                 <div className='Aside-module--pages'>
-                    <PageNavigationLink path={ '/' } name={ 'PROJECTS' } />
+                    <PageNavigationLink path={ '/' } name={ 'WELCOME' } />
+                    <PageNavigationLink path={ '/projects' } name={ 'PROJECTS' } />
                     <PageNavigationLink path={ '/' } name={ 'SERVICES' } />
                     <PageNavigationLink path={ '/' } name={ 'BLOG' } />
-                    <PageNavigationLink path={ '/' } name={ 'BACKGROUND' } />
-                    <PageNavigationLink path={ '/' } name={ 'CONTACT' } />
+                    <PageNavigationLink path={ '/background' } name={ 'BACKGROUND' } />
+                    <PageNavigationLink path={ '/contact' } name={ 'CONTACT' } />
                 </div>
             </div>
         </div>

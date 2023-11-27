@@ -5,16 +5,20 @@ import icon_clickable from '../img/icons/clickable.svg'
 import { Canvas } from '@react-three/fiber'
 import { Environment, Float, OrbitControls } from '@react-three/drei'
 import { Model as Default } from '../models/Default'
+import { ANIM_DELAY } from '../core'
 
-const HomeCred = ({ title, text, model, spin }) =>
+const HomeCred = ({ title, text, model, spin, index }) =>
 {
     return(
-        <div className='Home--cred Clickable-module--root'>
-            <div className='Home--cred--title'>{ title ? title : 'A Title' }</div>
+        <div className='Home--cred Clickable-module--root'
+            style={{animationDelay: index ? `${ index * ANIM_DELAY.homeCards }s` : '0s'}}>
+            <h3 className='text-left'>
+                { (title ? title : 'A Title').toUpperCase() }
+            </h3>
             <img className='Home--cred--icon' 
                 src={ icon_clickable }
                 alt='Clickable' />
-            <div className='Home--cred--divider'></div>
+            <div className='divider' />
             <div className='Home--cred--content'>
                 <div className='Home--cred--canvas'>
                     <Canvas>

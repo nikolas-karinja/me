@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" style="fill: #f06724; stroke-width: 0px;"/>
+  <polygon points="142 89 50 206 142 167 142 89" style="fill: #f06724; stroke-width: 0px;"/>
+  <polygon points="50 50 50 206 142 89 50 50" style="fill: #f27b28; stroke-width: 0px;"/>
+  <polygon points="103 50 50 50 142 89 103 50" style="fill: #f68825; stroke-width: 0px;"/>
+  <polygon points="192 192 192 64 256 256 192 192" style="fill: #f27b28; stroke-width: 0px;"/>
+  <polygon points="128 256 192 192 256 256 128 256" style="fill: #f68825; stroke-width: 0px;"/>
+  <polygon points="50 206 142 167 103 206 50 206" style="fill: #da5727; stroke-width: 0px;"/>
+  <polygon points="128 0 256 0 192 64 128 0" style="fill: #da5727; stroke-width: 0px;"/>
+  <path d="m128,0H0v256h128l64-64V64L128,0Zm14,167l-39,39h-53V50h53l39,39v78Z" style="fill: #fff; stroke-width: 0px;"/>
+  <polygon points="0 0 0 256 50 50 0 0" style="fill: #e9e8e9; stroke-width: 0px;"/>
+  <polyline points="103 206 128 256 142 167" style="fill: #e9e8e9; stroke-width: 0px;"/>
+  <polygon points="0 256 103 206 50 206 0 256" style="fill: #e9e8e9; stroke-width: 0px;"/>
+  <polygon points="192 192 142 89 142 167 192 192" style="fill: #e9e8e9; stroke-width: 0px;"/>
+  <polygon points="192 64 103 50 142 89 192 64" style="fill: #e9e8e9; stroke-width: 0px;"/>
+  <polygon points="128 0 50 50 103 50 128 0" style="fill: #e9e8e9; stroke-width: 0px;"/>
+</svg>
