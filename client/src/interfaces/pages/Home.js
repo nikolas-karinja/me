@@ -1,5 +1,3 @@
-import '../../sass/Home.sass'
-
 import img_homeName from '../../img/home-name.png'
 
 import HomeCred from '../HomeCred'
