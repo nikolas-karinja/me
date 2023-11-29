@@ -19,7 +19,7 @@ const InternalMenu = () =>
                     <PageNavigationLink path={ '/' } name={ 'WELCOME' } />
                     <PageNavigationLink path={ '/projects' } name={ 'PROJECTS' } />
                     <PageNavigationLink path={ '/' } name={ 'SERVICES' } />
-                    <PageNavigationLink path={ '/' } name={ 'BLOG' } />
+                    <PageNavigationLink path={ '/blog' } name={ 'BLOG' } />
                     <PageNavigationLink path={ '/background' } name={ 'BACKGROUND' } />
                     <PageNavigationLink path={ '/contact' } name={ 'CONTACT' } />
                 </div>

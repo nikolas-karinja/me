@@ -29,6 +29,13 @@ export const BACKGROUND = {
     languages : ['js', 'ts', 'cpp', 'csharp', 'java', 'html5', 'sass'],
 }
 
+export const EVENTS_STORED = {}
+export const EVENTS_LIST   = []
+
+export const INFO = {
+    displaySideMenus : true,
+}
+
 // objects
 export const LINKS = {
     GITHUB    : 'https://github.com/nikolas-karinja',
