@@ -2,6 +2,8 @@ import { useState } from 'react'
 import art_blogTitle from '../../img/blog-title.png'
 import BlogSearchBar from '../BlogSearchBar'
 import { setPageTitle } from '../../core/utils'
+import InternalMenu from '../InternalMenu'
+import ExternalMenu from '../ExternalMenu'
 
 const Blog = () =>
 {
@@ -29,22 +31,30 @@ const Blog = () =>
 
     setPageTitle('Blog')
 
-    return(
-        <div className='PageLayout-module--page constant'>
-            <article>
-                <img className='PageLayout-module--page--title'
-                    src={art_blogTitle}
-                    alt='Title' />
-                <p>Peruse through articles and posts me and some associates have written. The subjects can range from our relative fields to genuine descriptions of events and emotions. Sometimes we even reveal thoughts on current concepts.</p>
-                <BlogSearchBar onChange={onSearchInputChange}/>
-                <div className='BlogCollection-module--wrapper'>
-                    <p className='BlogCollection-module--wrapper--notif'
-                        style={{display: postsFound.length > 0 ? 'none' : 'block'}}>
-                        {determineNotif()}
-                    </p>
+    return( 
+        <>
+            <div className='PageLayout-module--root'>
+                <div className='PageLayout-module--page constant'>
+                    <article>
+                        <img className='PageLayout-module--page--title'
+                            src={art_blogTitle}
+                            alt='Title' />
+                        <p>Peruse through articles and posts me and some associates have written. The subjects can range from our relative fields to genuine descriptions of events and emotions. Sometimes we even reveal thoughts on current concepts.</p>
+                        <BlogSearchBar onChange={onSearchInputChange}/>
+                        <div className='BlogCollection-module--wrapper'>
+                            <p className='BlogCollection-module--wrapper--notif'
+                                style={{display: postsFound.length > 0 ? 'none' : 'block'}}>
+                                {determineNotif()}
+                            </p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-        </div>
+            </div>
+            <div className='PageLayout-module--horizontal'>
+                <InternalMenu />
+                <ExternalMenu />
+            </div>
+        </>
     )
 }
 
