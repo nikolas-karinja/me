@@ -76,6 +76,24 @@
     &.right
         right: 0px
 
+.BlogCollection-module
+    &--wrapper
+        position: relative
+
+        width: 100%
+        height: calc(100% - 17em)
+
+        background: rgba($color-background-dark, 0.75)
+        border-radius: 0.5em
+        display: inline-block !important
+        margin: 1em 0 0 0 
+
+        &--notif
+            position: absolute !important
+            top: calc(50% - 1em)
+
+            margin: auto
+
 .BlogSearchBar-module
     &--wrapper
         position: relative
@@ -164,7 +182,7 @@
         border-radius: 4px 
         color: #c2c2c2
         font-family: $font-family-normal
-        font-size: 16px
+        font-size: 0.9em
         font-weight: 200
         line-height: 20px
         text-align: right
@@ -217,6 +235,12 @@
         max-width: 1152px
         text-align: center
         translate: -50% 0%
+
+        &.constant
+            height: 100%
+
+            & article
+                height: calc(100% - 5em) !important
 
         &--title
             width: 100%

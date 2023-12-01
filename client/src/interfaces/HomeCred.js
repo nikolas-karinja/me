@@ -11,7 +11,7 @@ const HomeCred = ({ title, text, model, spin, index }) =>
 {
     return(
         <div className='Home--cred Clickable-module--root'
-            style={{animationDelay: index ? `${ index * ANIM_DELAY.homeCards }s` : '0s'}}>
+            style={{animationDelay: index ? `-${ index * ANIM_DELAY.homeCards }s` : '0s'}}>
             <h3 className='text-left'>
                 { (title ? title : 'A Title').toUpperCase() }
             </h3>

@@ -32,5 +32,5 @@ export const initSite = async () =>
 
 export const setPageTitle = (value) =>
 {
-    document.head.title.innerHTML = value
+    document.head.querySelector('title').innerHTML = value
 }

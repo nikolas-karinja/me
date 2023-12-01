@@ -1,7 +1,10 @@
+import { setPageTitle } from '../../core/utils'
 import art_contactTitle from '../../img/contact-title.png'
 
 const Contact = () =>
 {
+    setPageTitle('Contact')
+
     return(
         <div className='PageLayout-module--page'>
             <article>

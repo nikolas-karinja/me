@@ -1,9 +1,12 @@
+import { setPageTitle } from '../../core/utils'
 import art_projectsTitle from '../../img/projects-title.png'
 import PackagesSection from '../sections/PackagesSection'
 import ProjectsSection from '../sections/ProjectsSection'
 
 const Projects = () =>
 {
+    setPageTitle('Projects')
+
     return(
         <div className='PageLayout-module--page'>
             <article>

@@ -21,12 +21,12 @@ const ExternalMenu = () =>
             </div>
             <div className='AsideColumnLayout-module--slot-bottom'>
                 <div className='Aside-module--libs'>
-                    <LibNavigationLink name='react' linkUrl={ LINKS.INSTAGRAM } />
-                    <LibNavigationLink name='react-router-dom' linkUrl={ LINKS.INSTAGRAM } />
-                    <LibNavigationLink name='@react-three/fiber' linkUrl={ LINKS.INSTAGRAM } />
-                    <LibNavigationLink name='@react-three/drei' linkUrl={ LINKS.INSTAGRAM } />
-                    <LibNavigationLink name='framer-motion' linkUrl={ LINKS.INSTAGRAM } />
-                    <LibNavigationLink name='sass' linkUrl={ LINKS.INSTAGRAM } />
+                    <LibNavigationLink name='react' />
+                    <LibNavigationLink name='react-router-dom' />
+                    <LibNavigationLink name='@react-three/fiber' />
+                    <LibNavigationLink name='@react-three/drei' />
+                    <LibNavigationLink name='framer-motion' />
+                    <LibNavigationLink name='sass' />
                 </div>
             </div>
         </div>

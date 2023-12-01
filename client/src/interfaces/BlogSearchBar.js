@@ -1,6 +1,6 @@
 import icon_magnifier from '../img/icons/magnifier.svg'
 
-const BlogSearchBar = () =>
+const BlogSearchBar = ({onChange}) =>
 {
     return (
         <div className='BlogSearchBar-module--wrapper'>
@@ -9,7 +9,8 @@ const BlogSearchBar = () =>
                     src={icon_magnifier}
                     alt='icon' />
                 <input className='BlogSearchBar-module--bar--input'
-                    placeholder='Type keywords here...' />
+                    placeholder='Type keywords here...'
+                    onChange={onChange} />
             </div>
             <button className='BlogSearchBar-module--refresh'>
                 Refresh DB

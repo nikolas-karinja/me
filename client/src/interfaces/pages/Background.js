@@ -5,9 +5,12 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, Float, OrbitControls } from '@react-three/drei'
 import { Model as IbmPc5150Model } from '../../models/IBMPC5150'
 import SectionTitle from '../SectionTitle'
+import { setPageTitle } from '../../core/utils'
 
 const Background = () =>
 {
+    setPageTitle('Background')
+
     return(
         <div className='PageLayout-module--page'>
             <article>
