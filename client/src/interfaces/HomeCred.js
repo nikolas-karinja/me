@@ -24,12 +24,12 @@ const HomeCred = ({ title, text, model, spin, index }) =>
                     <Canvas>
                         <Environment preset='forest' />
                         <OrbitControls
-                            enableZoom={ false }
-                            autoRotate={ spin ? true : false } />
+                            enableZoom={false}
+                            autoRotate={spin ? true : false} />
                         <directionalLight
-                            intensity={ 3 }
+                            intensity={3}
                             position={[-0.25, 0, 1]} 
-                            castShadow/>
+                            castShadow />
                         <Float>
                             { model ? model : <Default rotation={[0.5, 1, 0]} /> }
                         </Float>

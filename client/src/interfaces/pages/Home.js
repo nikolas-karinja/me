@@ -4,6 +4,9 @@ import HomeCred from '../HomeCred'
 import { Model as IBMPC5150Model } from '../../models/IBMPC5150'
 import { Model as LanuageStackModel } from '../../models/LanguageStack'
 import { Model as PencilModel } from '../../models/Pencil'
+import { Model as OldMobilePhoneModel } from '../../models/OldMobilePhone'
+import { Model as InstaCameraModel } from '../../models/InstaCamera'
+import { Model as MediumFloppyDiskModel } from '../../models/MediumFloppyDisk'
 import ProjectsSection from '../sections/ProjectsSection'
 import PackagesSection from '../sections/PackagesSection'
 import SectionTitle from '../SectionTitle'
@@ -35,11 +38,10 @@ const Home = () =>
                             scale={ 0.85 } /> } />
                     <HomeCred 
                         index={ 3 }
-                        spin
                         title='Flexible'
                         text={ `With all types of teams and individuals. My friendly yet independent personality easily fits into any group I'm matched with, wether it's design or development.` }
-                        model={ <PencilModel 
-                            scale={ 0.15 } /> } />
+                        model={ <MediumFloppyDiskModel 
+                            scale={ 1 } /> } />
                     <HomeCred 
                         index={ 4 }
                         spin
@@ -49,18 +51,20 @@ const Home = () =>
                             scale={ 0.15 } /> } />
                     <HomeCred 
                         index={ 5 }
-                        spin
                         title='Influential'
                         text={ `My work and personal projects have gone on to see public acclaim. Not just from my close colleagues and friends, but public figures too. This includes my software and fashion.` }
-                        model={ <PencilModel 
-                            scale={ 0.15 } /> } />
+                        model={ <InstaCameraModel 
+                            position={[0, 0.5, 0]}
+                            rotation={[0.35, -0.5, 0]}
+                            scale={ 1.5 } /> } />
                     <HomeCred 
                         index={ 6 }
-                        spin
                         title='Reliable'
                         text={ `A mindset I follow is being for others what I would want others to be for me. If I have a task to complete, it will be executed with not only success but also efficiency.` }
-                        model={ <PencilModel 
-                            scale={ 0.15 } /> } />
+                        model={ <OldMobilePhoneModel 
+                            position={[0, -1, 0]}
+                            rotation={[-0.5, -0.5, -0.35]}
+                            scale={ 0.55 } /> } />
                 </div>
             </article>
         </div>
