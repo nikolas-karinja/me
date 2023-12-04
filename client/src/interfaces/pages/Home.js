@@ -11,12 +11,15 @@ import ProjectsSection from '../sections/ProjectsSection'
 import PackagesSection from '../sections/PackagesSection'
 import SectionTitle from '../SectionTitle'
 import { setPageTitle } from '../../core/utils'
+import InternalMenu from '../InternalMenu'
+import ExternalMenu from '../ExternalMenu'
 
 const Home = () =>
 {
     setPageTitle('Welcome')
 
     return(
+        <>
         <div className='PageLayout-module--page'>
             <article>
                 <img className='Home--name' 
@@ -66,8 +69,13 @@ const Home = () =>
                             rotation={[-0.5, -0.5, -0.35]}
                             scale={ 0.55 } /> } />
                 </div>
-            </article>
-        </div>
+                </article>
+            </div>
+            <div className='PageLayout-module--horizontal'>
+                <InternalMenu />
+                <ExternalMenu />
+            </div>
+        </>
     )
 }
 

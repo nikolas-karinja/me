@@ -14,7 +14,7 @@ export const dispatchEvent = (name) =>
 
 export const initEvents = async () =>
 {
-    for (const e in EVENTS_LIST)
+    for (let e of EVENTS_LIST)
     {
         EVENTS_STORED[e] = new Event(e)
     }

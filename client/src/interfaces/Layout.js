@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom'
 
 import ExternalMenu from './ExternalMenu'
 import InternalMenu from './InternalMenu'
+import { useEffect, useState } from 'react'
+import { addEventListener } from '../core/utils'
 
 const Layout = () => 
 {
@@ -12,13 +14,7 @@ const Layout = () =>
             <img className='Art-module'
                 src={ art_eyesWithoutAForm } 
                 alt='Background' />
-            <div className='PageLayout-module--root'>
-                <Outlet />
-            </div>
-            <div className='PageLayout-module--horizontal'>
-                <InternalMenu />
-                <ExternalMenu />
-            </div>
+            <Outlet />
         </>
     )
 }

@@ -30,7 +30,7 @@ export const BACKGROUND = {
 }
 
 export const EVENTS_STORED = {}
-export const EVENTS_LIST   = []
+export const EVENTS_LIST   = ['show-dashboard']
 
 export const INFO = {
     displaySideMenus : true,

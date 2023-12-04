@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import art_projectsTitle from '../../img/projects-title.png'
 import { INFO } from '../../core'
+import { dispatchEvent } from '../../core/utils'
 
 const Dashboard = () =>
 {
@@ -10,6 +11,8 @@ const Dashboard = () =>
 
         
     }, [])
+
+    dispatchEvent('show-dashboard')
 
     return(
         <div className='PageLayout-module--page'>
