@@ -6,6 +6,7 @@ import ExternalMenu from './ExternalMenu'
 import InternalMenu from './InternalMenu'
 import { useEffect, useState } from 'react'
 import { addEventListener } from '../core/utils'
+import MobileMenu from './MobileMenu'
 
 const Layout = () => 
 {
@@ -15,6 +16,7 @@ const Layout = () =>
                 src={ art_eyesWithoutAForm } 
                 alt='Background' />
             <Outlet />
+            <MobileMenu />
         </>
     )
 }

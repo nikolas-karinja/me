@@ -9,6 +9,7 @@
     min-height: 100%
 
     background: #424242
+    border: none
     opacity: 1
     
 .Aside-module
@@ -83,7 +84,7 @@
         width: 100%
         height: calc(100% - 17em)
 
-        background: rgba($color-background-dark, 0.75)
+        // background: rgba($color-background-dark, 0.75)
         border-radius: 0.5em
         display: inline-block !important
         margin: 1em 0 0 0 
@@ -192,6 +193,67 @@
         &:hover
             background: rgba(#000, 0.125)
             color: white
+
+.MobileMenu-module
+    &--wrapper
+        position: absolute
+        left: 0
+        top: 0
+
+        width: 100%
+        height: 64px
+
+        background: linear-gradient(0deg, rgba($color-background-body,0) 0%, rgba($color-background-body,1) 25%)
+        display: none
+        z-index: 3
+
+    &--pageTitle
+        position: absolute
+        left: 0
+        top: 0
+
+        width: 100%
+        height: 75%
+
+        animation: mobileMenuTitle 0.25s
+        color: $color-text-relevant
+        font-family: $font-family-chunky
+        font-size: 1.5em
+        letter-spacing: 0.125em
+        line-height: 48px
+        text-align: center
+
+    &--menuButton
+        position: absolute
+        right: 0.25em
+        top: 5%
+
+        height: 65%
+
+        animation: mobileMenuButton 0.25s
+
+    &--menu
+        position: absolute
+        right: 0
+        top: 75%
+
+        animation: mobileMenu 0.25s
+        background: $color-background-button
+        border-radius: 0 0 0 0.5em
+
+        &--button
+            height: 1.75em
+
+            color: $color-text-title
+            display: block !important
+            font-family: $font-family-chunky
+            font-size: 1.5em
+            font-weight: 600
+            line-height: 1.75em
+            padding: 0 0.5em
+            text-align: right
+            text-decoration: none
+            transition: 0.25s ease
 
 .PageLayout-module
     &--horizontal
@@ -316,7 +378,7 @@
         & *
             display: block
     &--title
-        margin: 1em 0px 0.5em 0px !important
+        margin: 0.25em 0px 0.5em 0px !important
 
         color: $color-text-relevant
         font-weight: 400
@@ -369,4 +431,28 @@
 
             width: calc(100% - 2em)
 
+            padding: 48px 0
+
             translate: 0% 0%
+
+    .MobileMenu-module
+        &--wrapper
+            display: inline-block
+
+@keyframes mobileMenu
+    from
+        right: -50vw
+    to
+        right: 0
+
+@keyframes mobileMenuButton
+    from
+        right: -4em
+    to
+        right: 0.25em
+
+@keyframes mobileMenuTitle
+    from
+        top: -4em
+    to
+        top: 0

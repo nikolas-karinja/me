@@ -20,6 +20,7 @@ const Home = () =>
 
     return(
         <>
+        <div className='PageLayout-module--root'>
         <div className='PageLayout-module--page'>
             <article>
                 <img className='Home--name' 
@@ -70,6 +71,7 @@ const Home = () =>
                             scale={ 0.55 } /> } />
                 </div>
                 </article>
+            </div>
             </div>
             <div className='PageLayout-module--horizontal'>
                 <InternalMenu />

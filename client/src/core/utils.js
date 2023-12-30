@@ -1,6 +1,6 @@
 import * as ReactDOM from 'react-dom/client'
 import App from '../interfaces/App'
-import { EVENTS_LIST, EVENTS_STORED } from '.'
+import { EVENTS_LIST, EVENTS_STORED, INFO } from '.'
 
 export const addEventListener = (name, method) => 
 {
@@ -33,4 +33,8 @@ export const initSite = async () =>
 export const setPageTitle = (value) =>
 {
     document.head.querySelector('title').innerHTML = value
+    
+    INFO.pageTitle = value
+
+    dispatchEvent('update-page-title')
 }

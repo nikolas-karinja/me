@@ -19,6 +19,8 @@ import sc_polyum1 from '../img/screenshots/polyum-1.gif'
 import sc_tmg1 from '../img/screenshots/tmg-1.gif'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
 
+import photo_floppiesAndKeys1 from '../img/photos/floppies-and-keys-1.jpg'
+
 export const ANIM_DELAY = {
     homeCards       : 0.5,
     backgroundTechs : 0.25,
@@ -30,10 +32,10 @@ export const BACKGROUND = {
 }
 
 export const EVENTS_STORED = {}
-export const EVENTS_LIST   = ['show-dashboard']
+export const EVENTS_LIST   = ['show-dashboard',  'update-page-title']
 
 export const INFO = {
-    displaySideMenus : true,
+    pageTitle : '',
 }
 
 // objects
@@ -112,6 +114,13 @@ export const TECHS = {
 }
 
 export const PROJECTS = {
+    'outdated': {
+        name   : 'Outdated Brand',
+        tool   : true,
+        info   : `A fashion brand that has its roots in styles and items from the past. There's a reason why retro and vintage are coming back.`,
+        techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
+        images : [photo_floppiesAndKeys1],
+    },
     'dimensional': {
         name   : 'Dimensional Game Engine',
         tool   : true,
