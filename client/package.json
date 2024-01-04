@@ -37,7 +37,7 @@
   	  	]
   	},
   	"devDependencies": {
-  	  	"@react-three/drei": "^9.83.3",
+  	  	"@react-three/drei": "^9.70.4",
   	  	"@react-three/fiber": "^8.14.1",
   	  	"framer-motion": "^10.16.4",
   	  	"react-router-dom": "^6.15.0",
