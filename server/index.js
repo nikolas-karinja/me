@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname  = path.dirname(__filename)
 
 const DEV  = true
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3000
 
 const App = express()
 const DB  = new MongoClient('mongodb+srv://nikolas-karinja:HVBy7PaYGtFUbzeg@universal.awqcoyk.mongodb.net/?retryWrites=true&w=majority')
