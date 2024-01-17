@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react'
-import profile_face2 from '../img/profile/face-2.jpg'
-import { addEventListener } from '../core/utils'
-import { INFO } from '../core'
-
+import icon_github from '../img/icons/github.svg'
+import icon_instagram from '../img/icons/instagram.svg'
+import icon_linkedin from '../img/icons/linkedin.svg'
+import icon_npm from '../img/icons/npm.svg'
 import icon_close from '../img/icons/close.svg'
 import icon_menu from '../img/icons/menu.svg'
-import PageNavigationLink from './PageNavigationLink'
-import { Link } from 'react-router-dom'
+
+import { LINKS } from '../core'
+import { useEffect, useState } from 'react'
+import { INFO } from '../core'
 import MobileMenuLink from './MobileMenuLink'
+import MobileMenuSocialsLink from './MobileMenuSocialsLink'
 
 const MobileMenu = () =>
 {
@@ -31,6 +33,12 @@ const MobileMenu = () =>
 
     return (
         <div className='MobileMenu-module--wrapper'>
+            <div className='MobileMenu-module--socials'>
+                <MobileMenuSocialsLink title='Github' linkUrl={ LINKS.GITHUB } iconUrl={ icon_github } />
+                <MobileMenuSocialsLink title='NPM' linkUrl={ LINKS.NPMJS } iconUrl={ icon_npm } />
+                <MobileMenuSocialsLink title='LinkedIn' linkUrl={ LINKS.LINKEDIN } iconUrl={ icon_linkedin } />
+                <MobileMenuSocialsLink title='Instagram' linkUrl={ LINKS.INSTAGRAM } iconUrl={ icon_instagram } />
+            </div>
             <div className='MobileMenu-module--pageTitle'
                 id='mobile-page-title'>
                 {pageTitle.toUpperCase()}

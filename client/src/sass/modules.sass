@@ -21,6 +21,7 @@
         color: #ffffff
         display: flex
         flex-direction: column
+        z-index: 99
 
     &--pages
         margin: -1em 0px
@@ -48,6 +49,13 @@
         color: #ffffff
         display: flex
         flex-direction: column
+
+        &--img
+            position: absolute
+            left: 0
+            bottom: 48px
+
+            width: 100%
 
 .AsideColumnLayout-module
     position: absolute
@@ -236,6 +244,10 @@
         width: 2em
         height: 2em
 
+    &--icon48
+        width: 48px
+        height: 48px
+
 .LibsNavigation-module
     &--linkWrapper
         width: 100%
@@ -268,6 +280,26 @@
         display: none
         z-index: 3
 
+    &--socials
+        position: absolute
+        left: 8px
+        top: 0
+
+        height: 100%
+
+        display: flex
+
+        &--link
+            border-radius: 4px
+            padding: 12px 2px
+
+            &:hover
+                background: rgba(#000, 0.125)
+
+        &--linkWrapper
+            border-radius: 4px
+            text-align: center
+
     &--pageTitle
         position: absolute
         left: 0
@@ -282,6 +314,7 @@
         font-size: 1.5em
         letter-spacing: 0.125em
         line-height: 48px
+        pointer-events: none
         text-align: center
 
     &--menuButton
@@ -504,18 +537,26 @@
     .InfoCards-module
         grid-auto-flow: column
         grid-template-columns: repeat(1, 1fr)
-        grid-template-rows: repeat(6, 1fr)
         padding: 0px !important
 
-        & div.Home--cred
+        &.contact 
+            grid-template-rows: repeat(3, 1fr)
+        &.home 
+            grid-template-rows: repeat(6, 1fr)
+
+        & div.InfoCard-module
             margin: 0px !important
 
 @media screen and (min-width: 1212px) and (max-width: 1564px)
     .InfoCards-module
         grid-auto-flow: column
         grid-template-columns: repeat(2, 1fr)
-        grid-template-rows: repeat(3, 1fr)
         padding: 0px !important
+
+        &.contact 
+            grid-template-rows: repeat(2, 1fr)
+        &.home 
+            grid-template-rows: repeat(3, 1fr)
 
 @keyframes mobileMenu
     from

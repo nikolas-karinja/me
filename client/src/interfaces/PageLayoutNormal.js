@@ -11,9 +11,7 @@ const PageLayoutNormal = ({titleArtImg, children}) =>
                         <img className='PageLayout-module--page--title'
                             src={titleArtImg}
                             alt='Title' />
-                        <div className='ThreeModel-module page'>
-                            {children}    
-                        </div>
+                        {children}
                     </article>
                 </div>
             </div>

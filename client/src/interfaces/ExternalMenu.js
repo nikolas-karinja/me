@@ -3,6 +3,8 @@ import icon_instagram from '../img/icons/instagram.svg'
 import icon_linkedin from '../img/icons/linkedin.svg'
 import icon_npm from '../img/icons/npm.svg'
 
+import photo_suit1 from '../img/photos/suit-1.png'
+
 import { LINKS } from '../core'
 import SocialsNavigationLink from './SocialsNavigationLink'
 import LibNavigationLink from './LibNavigationLink'
@@ -11,6 +13,9 @@ const ExternalMenu = () =>
 {
     return (
         <div className='AsideColumnLayout-module right'>
+            <img className='Aside-module--socials--img'
+                src={photo_suit1}
+                alt='Suit' />
             <div className='AsideColumnLayout-module--slot-center'>
                 <div className='Aside-module--socials'>
                     <SocialsNavigationLink title='Github' linkUrl={ LINKS.GITHUB } iconUrl={ icon_github } />

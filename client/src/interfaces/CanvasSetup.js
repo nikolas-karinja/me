@@ -4,14 +4,17 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls, Float } from '@react-three/drei'
 import { Model as DefaultModel } from '../models/Default'
 
-const CanvasSetup = ({spin, model}) =>
+const CanvasSetup = ({model}) =>
 {
+    const _rotateMult = Math.random() > 0.5 ? 1 : -1
+
     return (
         <Canvas>
             <Environment files={hdr_emptyWarehouse01} />
             <OrbitControls
+                autoRotateSpeed={4 * _rotateMult}
                 enableZoom={false}
-                autoRotate={spin ? true : false} />
+                autoRotate={true} />
             <directionalLight
                 intensity={3}
                 position={[-0.25, 0, 1]} 

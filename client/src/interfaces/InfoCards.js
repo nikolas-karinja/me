@@ -1,11 +1,11 @@
 import InfoCard from "./InfoCard"
 
-const InfoCards = ({data}) =>
+const InfoCards = ({className, data}) =>
 {
     let _count = 0
 
     return (
-        <div className='InfoCards-module'>
+        <div className={`InfoCards-module ${className ? className : ''}`}>
             {data.map((i) => {
                 _count++
 

@@ -13,6 +13,7 @@ const Home = () =>
         <PageLayoutNormal
             titleArtImg={img_homeName}>
             <InfoCards 
+                className='home'
                 data={INFO_CARDS.Home} />
         </PageLayoutNormal>
     )

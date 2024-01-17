@@ -3,7 +3,7 @@ import icon_clickable from '../img/icons/clickable.svg'
 import { ANIM_DELAY } from '../core'
 import CanvasSetup from './CanvasSetup'
 
-const InfoCard = ({ title, primary, text, model, spin, index }) =>
+const InfoCard = ({title, primary, text, model, spin, index}) =>
 {
     return(
         <div className='InfoCard-module'
@@ -20,7 +20,6 @@ const InfoCard = ({ title, primary, text, model, spin, index }) =>
             <div className='InfoCard-module--content'>
                 <div className='InfoCard-module--canvas'>
                     <CanvasSetup 
-                        spin={spin}
                         model={model} />
                 </div>
                 <div>{ text ? text : 'Some text goes here. It will go here and only here' }</div>
