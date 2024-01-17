@@ -18,6 +18,7 @@ import svg_tech_webgpu from '../img/icons/tech/webgpu.svg'
 import sc_polyum1 from '../img/screenshots/polyum-1.gif'
 import sc_tmg1 from '../img/screenshots/tmg-1.gif'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
+import sc_victorum1 from '../img/screenshots/victorum-1.png'
 
 import photo_1dot44 from '../img/photos/1dot44.jpg'
 
@@ -207,6 +208,12 @@ export const PROJECTS = {
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Built with my publicly available NPM packages.</>,
         techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
         images : [svg_tech_dimensional],
+    },
+    'victorum': {
+        name   : 'Victorum',
+        info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1066 and 1904 AD.<br /><br />Built using the Dimensional game engine.</>,
+        techs  : ['js', 'reactjs', 'threejs', 'sass'],
+        images : [sc_victorum1],
     },
     'tmg': {
         name   : 'Tilemap Generator',
