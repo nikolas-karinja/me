@@ -8,7 +8,7 @@ import { log } from './core/utils.js'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname  = path.dirname(__filename)
 
-const DEV  = true
+const DEV  = false
 const PORT = process.env.PORT || 3000
 
 const App = express()
@@ -21,7 +21,7 @@ App.use(bodyParser.json())
 
 // if the site is going into production
 if (!DEV)
-{HVBy7PaYGtFUbzeg
+{
     App.get('*', (req, res) => 
     {
 	    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
