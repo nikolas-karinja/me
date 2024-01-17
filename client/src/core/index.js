@@ -19,7 +19,7 @@ import sc_polyum1 from '../img/screenshots/polyum-1.gif'
 import sc_tmg1 from '../img/screenshots/tmg-1.gif'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
 
-import photo_floppiesAndKeys1 from '../img/photos/floppies-and-keys-1.jpg'
+import photo_1dot44 from '../img/photos/1dot44.jpg'
 
 import { Model as IBMPC5150Model } from '../models/IBMPC5150'
 import { Model as LanuageStackModel } from '../models/LanguageStack'
@@ -196,16 +196,16 @@ export const TECHS = {
 export const PROJECTS = {
     '1dot44': {
         name   : '1DOT44 Brand',
-        tool   : true,
-        info   : `A fashion brand that has its roots in styles and items from the past. There's a reason why retro and vintage are coming back.`,
+        type   : 'archive',
+        info   : <>Outdated mediums mean an update lifestyle. Oddities found lead to new media.<br /><br />@1dot44</>,
         techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
-        images : [photo_floppiesAndKeys1],
+        images : [photo_1dot44],
     },
     'dimensional': {
         name   : 'Dimensional Game Engine',
-        tool   : true,
-        info   : `A JavaScript 3D game engine in the works. It's object handling is based off my ECS package. Hopefully I can use it to make building my games easier. For now I'm still deciding wether to use WebGPU or WebGL.`,
-        techs  : ['js', 'reactjs', 'nodejs', 'webgpu', 'webgl', 'sass'],
+        type   : 'tool',
+        info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Built with my publicly available NPM packages.</>,
+        techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
         images : [svg_tech_dimensional],
     },
     'tmg': {

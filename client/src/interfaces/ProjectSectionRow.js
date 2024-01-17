@@ -1,3 +1,4 @@
+import svg_archive from '../img/icons/archive.svg'
 import svg_project from '../img/icons/project.svg'
 import svg_tool from '../img/icons/tool.svg'
 
@@ -33,7 +34,9 @@ const ProjectsSectionRow = ({ flipped, cardData }) =>
                     alt='Gallery'
                     key={ Math.random() } />
                 <img className={`Projects-section--card--img Icon-module--icon32 ${ flipped ? 'reversed' : '' }`}
-                    src={!cardData ? svg_project : cardData.tool ? svg_tool : svg_project}
+                    src={!cardData ? svg_project : !cardData.type ? svg_project : 
+                        cardData.type === 'tool' ? svg_tool : 
+                        cardData.type === 'archive' ? svg_archive : svg_project}
                     alt='Project' />
             </div>
         </div>
