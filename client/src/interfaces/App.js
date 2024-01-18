@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
-import Home from './pages/Home'
-import Background from './pages/Background'
-import Contact from './pages/Contact'
-import Projects from './pages/Projects'
-import Blog from './pages/Blog'
-import Dashboard from './pages/Dashboard'
+import HomePage from './pages/HomePage'
+import BackgroundPage from './pages/BackgroundPage'
+import ContactPage from './pages/ContactPage'
+import ProjectsPage from './pages/ProjectsPage'
+import BlogPage from './pages/BlogPage'
+import DashboardPage from './pages/DashboardPage'
+import DefaultPage from './pages/DefaultPage'
 
 const App = () =>
 {
@@ -13,12 +14,13 @@ const App = () =>
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={ <Layout /> }>
-                    <Route index element={ <Home /> } />
-                    <Route path='/background' element={ <Background /> } />
-                    <Route path='/blog' element={ <Blog /> } />
-                    <Route path='/contact' element={ <Contact /> } />
-                    <Route path='/projects' element={ <Projects /> } />
-                    <Route path='/dashboard' element={ <Dashboard /> } />
+                    <Route index element={ <HomePage /> } />
+                    <Route path='/background' element={ <BackgroundPage /> } />
+                    <Route path='/blog' element={ <DefaultPage /> } />
+                    <Route path='/contact' element={ <ContactPage /> } />
+                    <Route path='/products' element={ <DefaultPage /> } />
+                    <Route path='/projects' element={ <ProjectsPage /> } />
+                    <Route path='/dashboard' element={ <DashboardPage /> } />
                 </Route>
             </Routes>
         </BrowserRouter>
