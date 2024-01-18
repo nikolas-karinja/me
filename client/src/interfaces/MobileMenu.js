@@ -66,6 +66,10 @@ const MobileMenu = () =>
                     name={'Projects'} />
                 <MobileMenuLink 
                     onClick={onMenuButtonClick}
+                    path={'/products'} 
+                    name={'Products'} />
+                <MobileMenuLink 
+                    onClick={onMenuButtonClick}
                     path={'/blog'} 
                     name={'Blog'} />
                 <MobileMenuLink 

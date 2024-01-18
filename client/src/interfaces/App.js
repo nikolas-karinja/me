@@ -4,7 +4,6 @@ import HomePage from './pages/HomePage'
 import BackgroundPage from './pages/BackgroundPage'
 import ContactPage from './pages/ContactPage'
 import ProjectsPage from './pages/ProjectsPage'
-import BlogPage from './pages/BlogPage'
 import DashboardPage from './pages/DashboardPage'
 import DefaultPage from './pages/DefaultPage'
 
