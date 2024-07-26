@@ -200,7 +200,7 @@ export const PROJECTS = {
         name   : 'Dimensional Game Engine',
         type   : 'tool',
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Built with my publicly available NPM packages.</>,
-        techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
+        techs  : ['ts', 'reactjs', 'nodejs', 'threejs', 'sass'],
         images : [svg_tech_dimensional],
     },
     'infinipoly': {
