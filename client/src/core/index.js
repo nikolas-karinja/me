@@ -19,6 +19,7 @@ import sc_polyum1 from '../img/screenshots/polyum-1.gif'
 import sc_tmg1 from '../img/screenshots/tmg-1.gif'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
 import sc_victorum1 from '../img/screenshots/victorum-1.png'
+import sc_infinipoly1 from '../img/screenshots/infinipoly-1.png'
 
 import photo_1dot44 from '../img/photos/1dot44.jpg'
 
@@ -122,7 +123,7 @@ export const INFO_CARDS = {
 // objects
 export const LINKS = {
     GITHUB    : 'https://github.com/nikolas-karinja',
-    INSTAGRAM : 'https://www.instagram.com/kidwithmullet/',
+    INSTAGRAM : 'https://www.instagram.com/kidwithbuzz/',
     LINKEDIN  : 'https://www.linkedin.com/in/nikolas-karinja-20b621285/',
     NPMJS     : 'https://www.npmjs.com/~little-island',
 }
@@ -195,13 +196,6 @@ export const TECHS = {
 }
 
 export const PROJECTS = {
-    '1dot44': {
-        name   : '1DOT44 Brand',
-        type   : 'archive',
-        info   : <>Outdated mediums mean an update lifestyle. Oddities found lead to new media.<br /><br />@1dot44</>,
-        techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
-        images : [photo_1dot44],
-    },
     'dimensional': {
         name   : 'Dimensional Game Engine',
         type   : 'tool',
@@ -209,29 +203,17 @@ export const PROJECTS = {
         techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
         images : [svg_tech_dimensional],
     },
+    'infinipoly': {
+        name   : 'InfiniPoly',
+        info   : <>A world-building sandbox in low-poly style. Create fun interactive landscapes, eco-systems, and lore.<br /><br />Built using the Dimensional game engine.</>,
+        techs  : ['dimensional', 'js', 'reactjs', 'threejs', 'sass'],
+        images : [sc_infinipoly1],
+    },
     'victorum': {
         name   : 'Victorum',
         info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1066 and 1904 AD.<br /><br />Built using the Dimensional game engine.</>,
-        techs  : ['js', 'reactjs', 'threejs', 'sass'],
+        techs  : ['dimensional', 'js', 'reactjs', 'threejs', 'sass'],
         images : [sc_victorum1],
-    },
-    'tmg': {
-        name   : 'Tilemap Generator',
-        info   : `A WebGL app that automatically builds a tilemap from multiple specified bitmaps. The one being displayed is based on the British Isles. For the geometry it uses existing geometry from an external model pack. It then places, rotates, sand scales them based on the relevant bitmap.`,
-        techs  : ['js', 'reactjs', 'threejs', 'sass'],
-        images : [sc_tmg1],
-    },
-    'polyum': {
-        name   : 'Polyum',
-        info   : `A web-based multiplayer sandbox game. Simulate ecosystems and civilizations. Start off with a randomly generated world of your input and influence life within it. You will be able to view other people's worlds if they are set to public.`,
-        techs  : ['js', 'reactjs', 'threejs', 'nodejs', 'sass'],
-        images : [sc_polyum1],
-    },
-    'ttt3d': {
-        name   : 'Tic-Tac-Toe 3D!',
-        info   : `A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.`,
-        techs  : ['reactjs', 'sass', 'threejs'],
-        images : [sc_ttt3d1],
     },
 }
 
