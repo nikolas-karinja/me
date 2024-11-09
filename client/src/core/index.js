@@ -16,6 +16,7 @@ import svg_tech_webgpu from '../img/icons/tech/webgpu.svg'
 import svg_tech_howlerjs from '../img/icons/tech/howlerjs.svg'
 
 import sc_infinipoly1 from '../img/screenshots/infinipoly-1.png'
+import sc_octavia1 from '../img/screenshots/octavia-1.png'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
 import sc_victorum1 from '../img/screenshots/victorum-1.png'
 
@@ -203,7 +204,7 @@ export const PROJECTS = {
         type   : 'tool',
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Built with my publicly available NPM packages.</>,
         techs  : ['reactjs', 'threejs', 'howlerjs'],
-        images : [photo_octaviaLogo],
+        images : [sc_octavia1],
     },
     'infinipoly': {
         name   : 'Infinpoly',

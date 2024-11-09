@@ -17,7 +17,8 @@ const PackageCard = ({ cardData, odd, index }) =>
                 (
                     <img
                         src={ TECHS[t].icon }
-                        alt='Tech' />
+                        alt='Tech'
+                        key={ Math.random() } />
                 )) : <></>}
             </div>
             <h4>

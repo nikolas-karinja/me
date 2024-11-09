@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.efa312d7.css",
-    "main.js": "/static/js/main.80096ee3.js",
+    "main.js": "/static/js/main.214f620f.js",
     "static/media/ttt3d-1.gif": "/static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
     "static/media/suit-1.png": "/static/media/suit-1.ad3d4140ba00c9c87a39.png",
     "static/media/empty_warehouse_01_1k.hdr": "/static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
@@ -16,6 +16,7 @@
     "static/media/projects-title.png": "/static/media/projects-title.c40131cc1afdfba5a8fe.png",
     "static/media/contact-title.png": "/static/media/contact-title.8e26be3210dbc2c50dd8.png",
     "static/media/wip-title.png": "/static/media/wip-title.13bcb35f1a61f26606c1.png",
+    "static/media/octavia-1.png": "/static/media/octavia-1.da29a696bf730136c202.png",
     "static/media/archive.svg": "/static/media/archive.9900ab6c52575a81336f2116bec062e9.svg",
     "static/media/project.svg": "/static/media/project.82408c85def1d8c1a6de0adc8ac2b31a.svg",
     "static/media/tool.svg": "/static/media/tool.d89e99d19ee72e1ae8ebc118001a0ca8.svg",
@@ -44,10 +45,10 @@
     "static/media/instagram.svg": "/static/media/instagram.f627c0614b79981f9ddbe9b968113335.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.928f956d9c8ebcffb98a8e917154a81a.svg",
     "main.efa312d7.css.map": "/static/css/main.efa312d7.css.map",
-    "main.80096ee3.js.map": "/static/js/main.80096ee3.js.map"
+    "main.214f620f.js.map": "/static/js/main.214f620f.js.map"
   },
   "entrypoints": [
     "static/css/main.efa312d7.css",
-    "static/js/main.80096ee3.js"
+    "static/js/main.214f620f.js"
   ]
 }
