@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.efa312d7.css",
-    "main.js": "/static/js/main.fc233879.js",
+    "main.js": "/static/js/main.c3c74110.js",
     "static/media/ttt3d-1.gif": "/static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
     "static/media/suit-1.png": "/static/media/suit-1.ad3d4140ba00c9c87a39.png",
     "static/media/empty_warehouse_01_1k.hdr": "/static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
-    "static/media/infinipoly-1.png": "/static/media/infinipoly-1.b12755f4a6f8d2acff37.png",
+    "static/media/infinipoly-1.png": "/static/media/infinipoly-1.ecf905928c3e29ef4635.png",
     "static/media/home-name.png": "/static/media/home-name.e86949633d6f4117547f.png",
     "static/media/face-2.jpg": "/static/media/face-2.e51ee67442a78ffd2258.jpg",
     "static/media/victorum-1.png": "/static/media/victorum-1.6b32b8c5f02d438bc058.png",
@@ -44,10 +44,10 @@
     "static/media/instagram.svg": "/static/media/instagram.f627c0614b79981f9ddbe9b968113335.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.928f956d9c8ebcffb98a8e917154a81a.svg",
     "main.efa312d7.css.map": "/static/css/main.efa312d7.css.map",
-    "main.fc233879.js.map": "/static/js/main.fc233879.js.map"
+    "main.c3c74110.js.map": "/static/js/main.c3c74110.js.map"
   },
   "entrypoints": [
     "static/css/main.efa312d7.css",
-    "static/js/main.fc233879.js"
+    "static/js/main.c3c74110.js"
   ]
 }
