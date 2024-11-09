@@ -19,7 +19,7 @@ const ProjectsSectionRow = ({ flipped, cardData }) =>
                 <p className='Projects-section--card--info'>
                     { cardData ? cardData.info : 'Here is some info on the project that is being displayed.' }
                 </p>
-                <div className='Tech-module Projects-section--card--techs flex-reverse flex-right'>
+                <div className='Tech-module Projects-section--card--techs flex-right'>
                     { _techs.map((t) => (
                         <img 
                             src={ TECHS[ t ].icon }

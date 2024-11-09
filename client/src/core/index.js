@@ -1,6 +1,5 @@
 import svg_tech_cpp from '../img/icons/tech/cpp.svg'
 import svg_tech_csharp from '../img/icons/tech/csharp.svg'
-import svg_tech_dimensional from '../img/icons/tech/dimensional.svg'
 import svg_tech_html5 from '../img/icons/tech/html5.svg'
 import svg_tech_java from '../img/icons/tech/java.svg'
 import svg_tech_js from '../img/icons/tech/js.svg'
@@ -14,13 +13,13 @@ import svg_tech_threejs from '../img/icons/tech/threejs.svg'
 import svg_tech_ts from '../img/icons/tech/ts.svg'
 import svg_tech_webgl from '../img/icons/tech/webgl.svg'
 import svg_tech_webgpu from '../img/icons/tech/webgpu.svg'
+import svg_tech_howlerjs from '../img/icons/tech/howlerjs.svg'
 
-import sc_polyum1 from '../img/screenshots/polyum-1.gif'
-import sc_tmg1 from '../img/screenshots/tmg-1.gif'
+import sc_infinipoly1 from '../img/screenshots/infinipoly-1.png'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
 import sc_victorum1 from '../img/screenshots/victorum-1.png'
 
-import photo_1dot44 from '../img/photos/1dot44.jpg'
+import photo_octaviaLogo from '../img/icons/tech/octavia.png'
 
 import { Model as IBMPC5150Model } from '../models/IBMPC5150'
 import { Model as LanuageStackModel } from '../models/LanguageStack'
@@ -59,14 +58,14 @@ export const INFO_CARDS = {
         },
         {
             title   : 'Email',
-            primary : 'me@nikolaskarinja.com',
+            primary : 'nikolas.karinja@gmail.com',
             info    : `This is the traditional way to get in contact with me. This email is used for all forms of my business.`,
             model   : <IBMPC5150Model 
                 scale={1.5} />
         },
         {
             title   : 'Social Media',
-            primary : '@kidwithmullet',
+            primary : '@kidwithmod',
             info    : `This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach my via Instagram.`,
             model   : <InstaCameraModel 
                 position={[0, 0.5, 0]}
@@ -136,9 +135,9 @@ export const TECHS = {
         name : 'C#',
         icon : svg_tech_csharp,
     },
-    'dimensional': {
-        name : 'Dimensional Engine',
-        icon : svg_tech_dimensional,
+    'howlerjs': {
+        name : 'Howler.js',
+        icon : svg_tech_howlerjs,
     },
     'html5': {
         name : 'HTML 5',
@@ -159,6 +158,10 @@ export const TECHS = {
     'npm': {
         name : 'NPM',
         icon : svg_tech_npm,
+    },
+    'octavia': {
+        name : 'Octavia Game Engine',
+        icon : photo_octaviaLogo,
     },
     'reactjs': {
         name : 'React JS',
@@ -195,48 +198,40 @@ export const TECHS = {
 }
 
 export const PROJECTS = {
-    '1dot44': {
-        name   : '1DOT44 Brand',
-        type   : 'archive',
-        info   : <>Outdated mediums mean an update lifestyle. Oddities found lead to new media.<br /><br />@1dot44</>,
-        techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
-        images : [photo_1dot44],
-    },
-    'dimensional': {
-        name   : 'Dimensional Game Engine',
+    'octavia': {
+        name   : 'Octavia Game Engine',
         type   : 'tool',
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Built with my publicly available NPM packages.</>,
-        techs  : ['js', 'reactjs', 'nodejs', 'threejs', 'sass'],
-        images : [svg_tech_dimensional],
+        techs  : ['reactjs', 'threejs', 'howlerjs'],
+        images : [photo_octaviaLogo],
+    },
+    'infinipoly': {
+        name   : 'Infinpoly',
+        info   : <>An infinite terrain generator utilizing LOD and Simplex Noise. It uses web-workers to make the terrain generation faster. It implements the low-poly artstyle for the aesthetic.<br /><br />Built using Octavia.</>,
+        techs  : ['octavia', 'reactjs', 'threejs'],
+        images : [sc_infinipoly1],
     },
     'victorum': {
         name   : 'Victorum',
-        info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1066 and 1904 AD.<br /><br />Built using the Dimensional game engine.</>,
-        techs  : ['js', 'reactjs', 'threejs', 'sass'],
+        info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1492 and 1904 AD.<br /><br />Built using Octavia.</>,
+        techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_victorum1],
-    },
-    'tmg': {
-        name   : 'Tilemap Generator',
-        info   : `A WebGL app that automatically builds a tilemap from multiple specified bitmaps. The one being displayed is based on the British Isles. For the geometry it uses existing geometry from an external model pack. It then places, rotates, sand scales them based on the relevant bitmap.`,
-        techs  : ['js', 'reactjs', 'threejs', 'sass'],
-        images : [sc_tmg1],
-    },
-    'polyum': {
-        name   : 'Polyum',
-        info   : `A web-based multiplayer sandbox game. Simulate ecosystems and civilizations. Start off with a randomly generated world of your input and influence life within it. You will be able to view other people's worlds if they are set to public.`,
-        techs  : ['js', 'reactjs', 'threejs', 'nodejs', 'sass'],
-        images : [sc_polyum1],
     },
     'ttt3d': {
         name   : 'Tic-Tac-Toe 3D!',
         info   : `A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.`,
-        techs  : ['reactjs', 'sass', 'threejs'],
+        techs  : ['reactjs', 'threejs', 'sass'],
         images : [sc_ttt3d1],
     },
 }
 
 // lists
 export const PACKAGES = [
+    {
+        name  : '@little-island/octavia-engine',
+        info  : 'A game engine framework for javascript using Three.js for visuals.',
+        techs : ['ts', 'threejs'],
+    },
     {
         name  : '@little-island/ecs',
         info  : 'A modular Enity Component System for JavaScript. Makes handling multiple game-objects simpler.',
