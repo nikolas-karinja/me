@@ -202,27 +202,29 @@ export const PROJECTS = {
     'octavia': {
         name   : 'Octavia Game Engine',
         type   : 'tool',
-        info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Built with my publicly available NPM packages.</>,
+        info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Documentation in progress.<br /><br />Built with my publicly available NPM packages.</>,
         techs  : ['reactjs', 'threejs', 'howlerjs'],
         images : [sc_octavia1],
     },
     'infinipoly': {
         name   : 'Infinpoly',
-        info   : <>An infinite terrain generator utilizing LOD and Simplex Noise. It uses web-workers to make the terrain generation faster. It implements the low-poly artstyle for the aesthetic.<br /><br />Built using Octavia.</>,
+        info   : <>An infinite terrain generator utilizing LOD and Simplex Noise. It uses web-workers to make the terrain generation faster.<br /><br />Requires a mid-tier graphics card and isn't optimised for mobile devices.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_infinipoly1],
+        link   : 'https://infinipoly-ede85dfe16ba.herokuapp.com/',
     },
     'victorum': {
         name   : 'Victorum',
-        info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1492 and 1904 AD.<br /><br />Built using Octavia.</>,
+        info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1492 and 1904 AD. This a project idea that I've been working on since I was 16.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_victorum1],
     },
     'ttt3d': {
         name   : 'Tic-Tac-Toe 3D!',
-        info   : `A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.`,
+        info   : <>A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.<br /><br />Works on mobile devices too!</>,
         techs  : ['reactjs', 'threejs', 'sass'],
         images : [sc_ttt3d1],
+        link   : 'https://nikolas-karinja.github.io/tictactoe-3d/build/index.html',
     },
 }
 
