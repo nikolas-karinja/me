@@ -205,6 +205,7 @@ export const PROJECTS = {
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Documentation in progress.<br /><br />Built with my publicly available NPM packages.</>,
         techs  : ['reactjs', 'threejs', 'howlerjs'],
         images : [sc_octavia1],
+        link   :'https://octavia-engine-c2jocsedk-nikolas-karinjas-projects.vercel.app/',
     },
     'infinipoly': {
         name   : 'Infinpoly',
