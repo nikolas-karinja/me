@@ -66,7 +66,7 @@ export const INFO_CARDS = {
         },
         {
             title   : 'Social Media',
-            primary : '@kidwithmod',
+            primary : '@kidwithmullet',
             info    : `This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach my via Instagram.`,
             model   : <InstaCameraModel 
                 position={[0, 0.5, 0]}
