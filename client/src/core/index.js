@@ -17,6 +17,7 @@ import svg_tech_howlerjs from '../img/icons/tech/howlerjs.svg'
 
 import sc_infinipoly1 from '../img/screenshots/infinipoly-1.png'
 import sc_octavia1 from '../img/screenshots/octavia-1.png'
+import sc_polycity1 from '../img/screenshots/polycity-1.png'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
 import sc_victorum1 from '../img/screenshots/victorum-1.png'
 
@@ -213,6 +214,13 @@ export const PROJECTS = {
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_infinipoly1],
         link   : 'https://infinipoly-ede85dfe16ba.herokuapp.com/',
+    },
+    'polycity': {
+        name   : 'PolyCity',
+        info   : <>A simulator game about building communities. Inspired by ThinMatrix's city-builder series.</>,
+        techs  : ['octavia', 'reactjs', 'threejs'],
+        images : [sc_polycity1],
+        link   : 'https://raw.githack.com/nikolas-karinja/polycity/main/build/index.html',
     },
     'victorum': {
         name   : 'Victorum',
