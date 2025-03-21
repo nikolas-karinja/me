@@ -206,6 +206,7 @@ export const PROJECTS = {
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Documentation in progress.<br /><br />Built with my publicly available NPM packages.</>,
         techs  : ['reactjs', 'threejs', 'howlerjs'],
         images : [sc_octavia1],
+        trello : "https://trello.com/b/XI1UmCcK/octavia-engine",
         link   :'https://octavia-engine-c2jocsedk-nikolas-karinjas-projects.vercel.app/',
     },
     'infinipoly': {
@@ -213,6 +214,7 @@ export const PROJECTS = {
         info   : <>An infinite terrain generator utilizing LOD and Simplex Noise. It uses web-workers to make the terrain generation faster.<br /><br />Requires a mid-tier graphics card and isn't optimised for mobile devices.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_infinipoly1],
+        trello : "https://trello.com/b/TKve9Vzw/infinipoly",
         link   : 'https://infinipoly-ede85dfe16ba.herokuapp.com/',
     },
     'polycity': {
@@ -220,19 +222,21 @@ export const PROJECTS = {
         info   : <>A simulator game about building communities. Inspired by ThinMatrix's city-builder series.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_polycity1],
+        trello : "https://trello.com/b/DaALo9a4/polycity",
         link   : 'https://raw.githack.com/nikolas-karinja/polycity/main/build/index.html',
     },
-    'victorum': {
-        name   : 'Victorum',
-        info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1492 and 1904 AD. This a project idea that I've been working on since I was 16.<br /><br />Built using Octavia.</>,
-        techs  : ['octavia', 'reactjs', 'threejs'],
-        images : [sc_victorum1],
-    },
+    // 'victorum': {
+    //     name   : 'Victorum',
+    //     info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1492 and 1904 AD. This a project idea that I've been working on since I was 16.<br /><br />Built using Octavia.</>,
+    //     techs  : ['octavia', 'reactjs', 'threejs'],
+    //     images : [sc_victorum1],
+    // },
     'ttt3d': {
         name   : 'Tic-Tac-Toe 3D!',
         info   : <>A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.<br /><br />Works on mobile devices too!</>,
         techs  : ['reactjs', 'threejs', 'sass'],
         images : [sc_ttt3d1],
+        trello : "https://trello.com/b/rGVnQEm3/tic-tac-toe-3d",
         link   : 'https://nikolas-karinja.github.io/tictactoe-3d/build/index.html',
     },
 }

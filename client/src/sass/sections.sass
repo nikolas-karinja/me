@@ -27,6 +27,20 @@
         padding: 0.5em 0.5em 0.5em 5em
         text-align: left
         text-decoration: none
+        transition-property: background, color
+        transition-duration: 0.25s
+
+        &:hover
+            background: rgba(#fff, 0.75)
+
+            &.darken
+                background: rgba(#fff, 0.75)
+                
+            & h4
+                color: $color-background-dark
+
+            & .Packages-section--card--info
+                color: $color-background-normal
 
         &.darken
             background: rgba($color-background-dark, 0.75)
@@ -73,6 +87,16 @@
 
             & * 
                 direction: ltr
+
+        &:hover
+            & .Projects-section--card
+                background: rgba(#fff, 0.75)
+                
+                &--title
+                    color: $color-background-dark
+
+                &--info
+                    color: $color-background-normal
         
     &--card
         position: relative
@@ -81,6 +105,8 @@
         overflow: hidden
         padding: 1em
         text-align: left
+        transition-property: background, color
+        transition-duration: 0.25s
 
         &.darken
             background: rgba($color-background-dark, 0.75)
@@ -103,6 +129,19 @@
             min-height: 100%
 
             translate: -50% -50%
+
+        &--relLinks
+            position: absolute
+            left: 4px
+            top: 4px
+
+            display: flex
+            gap: 8px
+            height: 64px
+
+            &.reversed
+                left: auto !important
+                right: 4px
 
         &--img
             position: absolute
