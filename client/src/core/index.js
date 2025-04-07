@@ -60,7 +60,7 @@ export const INFO_CARDS = {
         },
         {
             title   : 'Email',
-            primary : 'nikolas.karinja@gmail.com',
+            primary : 'direct@nikolaskarinja.com',
             info    : `This is the traditional way to get in contact with me. This email is used for all forms of my business.`,
             model   : <IBMPC5150Model 
                 scale={1.5} />
@@ -68,7 +68,7 @@ export const INFO_CARDS = {
         {
             title   : 'Social Media',
             primary : '@kidwithmullet',
-            info    : `This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach my via Instagram.`,
+            info    : `This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach me via Instagram.`,
             model   : <InstaCameraModel 
                 position={[0, 0.5, 0]}
                 rotation={[0.35, -0.5, 0]}
@@ -77,7 +77,7 @@ export const INFO_CARDS = {
     ],
     Home: [
         {
-            title : 'Experienced',
+            title : 'Professional',
             info  : `Of programming and software design. I've been doing this for own fun since I was 12 playing around with the MS-DOS 6.0 kernel in my school's library.`,
             model : <IBMPC5150Model 
                 scale={1.5} />

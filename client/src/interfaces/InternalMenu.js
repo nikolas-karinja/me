@@ -1,5 +1,4 @@
-import profile_face1 from '../img/profile/face-1.JPG'
-import profile_face2 from '../img/profile/face-2.jpg'
+import profile_face3 from '../img/profile/face_3.jpg'
 
 import PageNavigationLink from './PageNavigationLink'
 
@@ -10,7 +9,7 @@ const InternalMenu = () =>
             <div className='AsideColumnLayout-module--slot-top'>
                 <div className='Aside-module--profile'>
                     <img className='ProfileNavigation-module--profile' 
-                        src={ profile_face2 } 
+                        src={ profile_face3 } 
                         alt='profile' />
                     <div className='ProfileNavigation-module--name'>NIKOLAS KARINJA</div>
                 </div>
