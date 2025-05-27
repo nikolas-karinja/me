@@ -19,7 +19,7 @@ import sc_infinipoly1 from '../img/screenshots/infinipoly-1.png'
 import sc_octavia1 from '../img/screenshots/octavia-1.png'
 import sc_polycity1 from '../img/screenshots/polycity-1.png'
 import sc_ttt3d1 from '../img/screenshots/ttt3d-1.gif'
-import sc_victorum1 from '../img/screenshots/victorum-1.png'
+import sc_3chat1 from '../img/screenshots/3chat-1.png'
 
 import photo_octaviaLogo from '../img/icons/tech/octavia.png'
 
@@ -219,18 +219,18 @@ export const PROJECTS = {
     },
     'polycity': {
         name   : 'PolyCity',
-        info   : <>A simulator game about building communities. Inspired by ThinMatrix's city-builder series.</>,
+        info   : <>A simulator game about building communities with politics. You decide wether your administration is corrupt or virtuous. Inspired by ThinMatrix's city-builder series.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_polycity1],
         trello : "https://trello.com/b/DaALo9a4/polycity",
         link   : 'https://raw.githack.com/nikolas-karinja/polycity/main/build/index.html',
     },
-    // 'victorum': {
-    //     name   : 'Victorum',
-    //     info   : <>A grand-strategy game influenced by the Total War and Crusader Kings franchises. Time period takes place between 1492 and 1904 AD. This a project idea that I've been working on since I was 16.<br /><br />Built using Octavia.</>,
-    //     techs  : ['octavia', 'reactjs', 'threejs'],
-    //     images : [sc_victorum1],
-    // },
+    '3chat': {
+        name   : '3Chat',
+        info   : <>A simple chat app but with 3D avatars. Pick an avatar, create or join a chat room and talk to other players.<br /><br />Built using Octavia.</>,
+        techs  : ['octavia', 'reactjs', 'threejs', 'nodejs', 'socketio'],
+        images : [sc_3chat1],
+    },
     'ttt3d': {
         name   : 'Tic-Tac-Toe 3D!',
         info   : <>A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.<br /><br />Works on mobile devices too!</>,
