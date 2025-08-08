@@ -7,6 +7,7 @@ import InternalMenu from './InternalMenu'
 import { useEffect, useState } from 'react'
 import { addEventListener } from '../core/utils'
 import MobileMenu from './MobileMenu'
+import SiteEntry from './SiteEntry'
 
 const Layout = () => 
 {
@@ -17,6 +18,7 @@ const Layout = () =>
                 alt='Background' />
             <Outlet />
             <MobileMenu />
+            <SiteEntry />
         </>
     )
 }

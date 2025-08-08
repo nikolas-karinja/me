@@ -3,23 +3,40 @@ import svg_project from '../img/icons/project.svg'
 import svg_tool from '../img/icons/tool.svg'
 import svg_trello from '../img/icons/trello.svg'
 
-import { TECHS } from '../core'
+import { SOUNDS, TECHS } from '../core'
 import ExtSiteLink from './ExtSiteLink'
+import { useState } from 'react'
 
 const ProjectsSectionRow = ({ flipped, cardData }) =>
 {
     let _techs = cardData ? cardData.techs : ['js', 'sass']
     let _count = cardData ? cardData.images.length : 0
 
+    const [pointerEntered, setPointerEntered] = useState(false)
+    
+    const _onPointerEnter = () =>
+    {
+        SOUNDS.cardTouched.play()
+            
+        setPointerEntered(true)
+    }
+    
+    const _onPointerLeave = () =>
+    {
+        setPointerEntered(false)
+    }
+
     return(
         <a href={ cardData.link ? cardData.link : null }
             target='_blank'
             rel='noopener noreferrer me'
-            style={{textDecoration: 'none'}}>
+            style={{textDecoration: 'none'}}
+            onPointerEnter={_onPointerEnter}
+            onPointerLeave={_onPointerLeave}>
             <div className={ `Projects-section--row ${ flipped ? 'reversed' : '' }` }>
                 <div className={ `Projects-section--card darken ${ flipped ? 'borderRadius--0100' : 'borderRadius--1000' }` }>
                     <h3 className='Projects-section--card--title'>
-                        { (cardData ? cardData.name : 'Project').toUpperCase() }
+                        {`${pointerEntered ? "★ " : ""}`}{ (cardData ? cardData.name : 'Project').toUpperCase() }
                     </h3>
                     <div className='divider'></div>
                     <p className='Projects-section--card--info'>

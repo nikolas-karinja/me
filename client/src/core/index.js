@@ -30,6 +30,8 @@ import { Model as OldMobilePhoneModel } from '../models/OldMobilePhone'
 import { Model as InstaCameraModel } from '../models/InstaCamera'
 import { Model as MediumFloppyDiskModel } from '../models/MediumFloppyDisk'
 
+import {Howl} from "howler"
+
 export const ANIM_DELAY = {
     homeCards       : 0.5,
     backgroundTechs : 0.25,
@@ -45,6 +47,24 @@ export const EVENTS_LIST   = ['show-dashboard',  'update-page-title']
 
 export const INFO = {
     pageTitle : '',
+}
+
+export const SOUNDS = {
+    angelicTitle: new Howl({
+        src: ["./audio/sfx/angelic_title.mp3"]
+    }),
+    cardTouched: new Howl({
+        src: ["./audio/sfx/card_touched.mp3"]
+    }),
+    siteMenuClick: new Howl({
+        src: ["./audio/sfx/site_menu_click.mp3"]
+    }),
+    threeModelSwoosh: new Howl({
+        src: ["./audio/sfx/3d_model_swoosh.mp3"]
+    }),
+    welcome: new Howl({
+        src: ["./audio/sfx/welcome.mp3"]
+    }),
 }
 
 export const INFO_CARDS = {

@@ -1,15 +1,32 @@
 import icon_clickable from '../img/icons/clickable.svg'
 
-import { ANIM_DELAY } from '../core'
+import { ANIM_DELAY, SOUNDS } from '../core'
 import CanvasSetup from './CanvasSetup'
+import { useState } from 'react'
 
 const InfoCard = ({title, primary, text, model, spin, index}) =>
 {
+    const [pointerEntered, setPointerEntered] = useState(false)
+
+    const _onPointerEnter = () =>
+    {
+        SOUNDS.cardTouched.play()
+        
+        setPointerEntered(true)
+    }
+
+    const _onPointerLeave = () =>
+    {
+        setPointerEntered(false)
+    }
+
     return(
         <div className='InfoCard-module'
-            style={{animationDelay: index ? `-${ index * ANIM_DELAY.homeCards }s` : '0s'}}>
+            style={{animationDelay: index ? `-${ index * ANIM_DELAY.homeCards }s` : '0s'}}
+            onPointerEnter={_onPointerEnter}
+            onPointerLeave={_onPointerLeave}>
             <h3 className='text-left'>
-                {(title ? title : 'A Title').toUpperCase()}
+                {`${pointerEntered ? "★ " : ""}`}{(title ? title : 'A Title').toUpperCase()}
             </h3>
             {primary ? <div className='InfoCard-module--primary'>
                     {primary}

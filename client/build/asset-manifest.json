@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.1ca1ed25.css",
-    "main.js": "./static/js/main.c94890aa.js",
+    "main.css": "./static/css/main.36ca8622.css",
+    "main.js": "./static/js/main.79cffe56.js",
     "static/media/ttt3d-1.gif": "./static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
     "static/media/suit-1.png": "./static/media/suit-1.ad3d4140ba00c9c87a39.png",
     "static/media/empty_warehouse_01_1k.hdr": "./static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
     "static/media/infinipoly-1.png": "./static/media/infinipoly-1.ecf905928c3e29ef4635.png",
     "static/media/home-name.png": "./static/media/home-name.e86949633d6f4117547f.png",
-    "static/media/face-2.jpg": "./static/media/face-2.e51ee67442a78ffd2258.jpg",
-    "static/media/victorum-1.png": "./static/media/victorum-1.6b32b8c5f02d438bc058.png",
+    "static/media/3chat-1.png": "./static/media/3chat-1.0e6ad11b946b0fc43aa1.png",
     "static/media/eyes-without-a-form.svg": "./static/media/eyes-without-a-form.b6a7b82e44f960d09435c258e9c1d22b.svg",
-    "static/media/face-1.JPG": "./static/media/face-1.2b425dca1cf96955d5d4.JPG",
+    "static/media/kidwithmullet.jpeg": "./static/media/kidwithmullet.eeea1a95cf29994424fa.jpeg",
     "static/media/polycity-1.png": "./static/media/polycity-1.7f8b01c8cdee8052d8d0.png",
     "static/media/octavia.png": "./static/media/octavia.7f292438cd4beaf67116.png",
     "static/media/background-title.png": "./static/media/background-title.a59e0982ef632a1f06ed.png",
@@ -46,11 +45,11 @@
     "static/media/html5.svg": "./static/media/html5.5804150e47fbeb132a5d2688f08ce4c8.svg",
     "static/media/instagram.svg": "./static/media/instagram.f627c0614b79981f9ddbe9b968113335.svg",
     "static/media/reactjs.svg": "./static/media/reactjs.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.1ca1ed25.css.map": "./static/css/main.1ca1ed25.css.map",
-    "main.c94890aa.js.map": "./static/js/main.c94890aa.js.map"
+    "main.36ca8622.css.map": "./static/css/main.36ca8622.css.map",
+    "main.79cffe56.js.map": "./static/js/main.79cffe56.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ca1ed25.css",
-    "static/js/main.c94890aa.js"
+    "static/css/main.36ca8622.css",
+    "static/js/main.79cffe56.js"
   ]
 }
