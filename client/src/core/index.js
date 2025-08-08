@@ -239,7 +239,7 @@ export const PROJECTS = {
     },
     'polycity': {
         name   : 'PolyCity',
-        info   : <>A simulator game about building communities with politics. You decide wether your administration is corrupt or virtuous. Inspired by ThinMatrix's city-builder series.<br /><br />Built using Octavia.</>,
+        info   : <>A simulator game about building communities with politics. You decide wether your administration is corrupt or virtuous. Pick a fantasy political-party and keep it in power to avoid losing the elections. Inspired by ThinMatrix's city-builder series.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_polycity1],
         trello : "https://trello.com/b/DaALo9a4/polycity",
@@ -247,7 +247,7 @@ export const PROJECTS = {
     },
     '3chat': {
         name   : '3Chat',
-        info   : <>A simple chat app but with 3D avatars. Pick an avatar, create or join a chat room and talk to other players.<br /><br />Built using Octavia.</>,
+        info   : <>A simple chat app but with 3D avatars. Pick an avatar, create or join a chat room and talk to other players. Still working out the room features. I want to add a feature where the players can play 3D games with each other.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs', 'nodejs', 'socketio'],
         images : [sc_3chat1],
     },
