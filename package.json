@@ -1,26 +1,54 @@
 {
   	"name": "me",
-  	"version": "1.0.0",
-  	"description": "",
-  	"type": "module",
-  	"main": "index.js",
-  	"scripts": {
-  	  	"start": "node server/index.js",
-		"test": "cd client && npm start",
-  	  	"build": "cd client && npm install && npm run build",
-  	  	"push": "git add . && git commit -am \"Deploy app to Heroku\" && git push origin main",
-  	  	"deploy": "npm run build && npm run gh-pages-setup && npm run push",
-		"gh-pages-setup": "rmdir docs /s && cd client && xcopy build ..\\docs /s /e"
-  	},
-  	"engines": {
-  	  	"npm": "9.x",
-  	  	"node": "18.x"
-  	},
-  	"keywords": [],
-  	"author": "",
-  	"license": "ISC",
+  	"version": "0.1.0",
+  	"private": true,
+  	"proxy": "http://localhost:8080",
+  	"homepage": "https://nikolas-karinja.github.io/me/",
   	"dependencies": {
-  	  	"express": "^4.18.2",
-  	  	"mongodb": "^6.1.0"
+  	  	"@react-three/drei": "^9.70.4",
+  	  	"@react-three/fiber": "^8.14.1",
+  	  	"@testing-library/jest-dom": "^5.17.0",
+  	  	"@testing-library/react": "^13.4.0",
+  	  	"@testing-library/user-event": "^13.5.0",
+  	  	"@types/react-router-dom": "^5.3.3",
+  	  	"framer-motion": "^10.16.4",
+  	  	"howler": "^2.2.4",
+  	  	"react": "^18.2.0",
+  	  	"react-dom": "^18.2.0",
+  	  	"react-router-dom": "^6.21.2",
+  	  	"react-scripts": "5.0.1",
+  	  	"sass": "^1.66.1",
+  	  	"typewriter-effect": "^2.21.0",
+  	  	"web-vitals": "^2.1.4"
+  	},
+  	"scripts": {
+  	  	"start": "react-scripts start",
+  	  	"build": "react-scripts build",
+  	  	"test": "react-scripts test",
+  	  	"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+	   	"deploy": "gh-pages -d build",
+		"commit": "npm run deploy -- -m \"Deploy React app to GitHub Pages\""
+  	},
+  	"eslintConfig": {
+  	  	"extends": [
+  	  	  	"react-app",
+  	  	  	"react-app/jest"
+  	  	]
+  	},
+  	"browserslist": {
+  	  	"production": [
+  	  	  	">0.2%",
+  	  	  	"not dead",
+  	  	  	"not op_mini all"
+  	  	],
+  	  	"development": [
+  	  	  	"last 1 chrome version",
+  	  	  	"last 1 firefox version",
+  	  	  	"last 1 safari version"
+  	  	]
+  	},
+  	"devDependencies": {
+  	  	"gh-pages": "^6.3.0"
   	}
 }
