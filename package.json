@@ -2,7 +2,7 @@
   	"name": "me",
   	"version": "0.1.0",
   	"private": true,
-  	"proxy": "http://localhost:8080",
+  	"proxy": "http://localhost:3000",
   	"homepage": "https://nikolaskarinja.com",
   	"dependencies": {
   	  	"@react-three/drei": "^9.70.4",
@@ -26,9 +26,9 @@
   	  	"build": "react-scripts build",
   	  	"test": "react-scripts test",
   	  	"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-	   	"deploy": "gh-pages -d build",
-		"commit": "npm run deploy -- -m \"Deploy React app to GitHub Pages\""
+  	  	"predeploy": "npm run build",
+  	  	"deploy": "gh-pages -d build",
+  	  	"commit": "npm run deploy -- -m \"Deploy React app to GitHub Pages\""
   	},
   	"eslintConfig": {
   	  	"extends": [

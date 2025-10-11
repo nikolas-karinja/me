@@ -188,6 +188,40 @@
         &--title
             margin: 0px 0px 0px 0px
 
+.SiteBuilderAdvertisement-section
+    &--container
+        position: relative
+
+        width: calc(100% - 2em)
+
+        border: solid 1px $color-border
+        border-radius: 1em
+        background: rgba($color-background-dark, 0.75)
+        overflow: hidden
+        padding: 1em
+        text-align: left
+        transition-property: background, color
+        transition-duration: 0.25s
+
+        & h1
+            margin-top: 0 !important
+
+    &--content
+        display: grid
+        grid-auto-rows: 20em //min-content
+        grid-template-columns: 2fr 20em
+        direction: ltr
+
+        &--card
+            position: relative
+
+            border: solid 1px $color-border
+            overflow: hidden
+            padding: 1em
+            text-align: left
+            transition-property: background, color
+            transition-duration: 0.25s
+
 .Technologies-section
     &--container
         width: calc(100% - 2em)
