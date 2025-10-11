@@ -3,7 +3,7 @@
   	"version": "0.1.0",
   	"private": true,
   	"proxy": "http://localhost:8080",
-  	"homepage": "https://nikolas-karinja.github.io/me/",
+  	"homepage": "https://nikolaskarinja.com",
   	"dependencies": {
   	  	"@react-three/drei": "^9.70.4",
   	  	"@react-three/fiber": "^8.14.1",
