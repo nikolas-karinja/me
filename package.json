@@ -10,7 +10,7 @@
   	  	"build": "cd client && npm install && npm run build",
   	  	"push": "git add . && git commit -am \"Deploy app to Heroku\" && git push origin main",
   	  	"deploy": "npm run build && npm run gh-pages-setup && npm run push",
-		"gh-pages-setup": "rmdir gh-pages /s && cd client && xcopy build ..\\gh-pages /s /e"
+		"gh-pages-setup": "rmdir docs /s && cd client && xcopy build ..\\docs /s /e"
   	},
   	"engines": {
   	  	"npm": "9.x",
