@@ -5,7 +5,7 @@ import { Environment, OrbitControls, Float } from '@react-three/drei'
 import { Model as DefaultModel } from '../models/Default'
 import { SOUNDS } from '../core'
 
-const CanvasSetup = ({model}) =>
+const CanvasSetup = ({model, autoRotateSpeed}) =>
 {
     const _rotateMult = Math.random() > 0.5 ? 1 : -1
 
@@ -19,7 +19,7 @@ const CanvasSetup = ({model}) =>
         className="CanvasSetup-module">
             <Environment files={hdr_emptyWarehouse01} />
             <OrbitControls
-                autoRotateSpeed={4 * _rotateMult}
+                autoRotateSpeed={autoRotateSpeed != null ? autoRotateSpeed : 4 * _rotateMult}
                 enableZoom={false}
                 autoRotate={true} />
             <directionalLight

@@ -198,7 +198,7 @@
         border-radius: 1em
         background: rgba($color-background-dark, 0.75)
         overflow: hidden
-        padding: 0 1em 1em 1em
+        padding: 0 1em 0 1em
         text-align: left
         transition-property: background, color
         transition-duration: 0.25s
@@ -220,8 +220,6 @@
         grid-template-columns: 2fr 2fr
         direction: ltr
 
-        margin: 1em 0 0 0  
-
         &--card
             position: relative
 
@@ -232,23 +230,42 @@
             transition-property: background, color
             transition-duration: 0.25s
 
+        & h3.title
+            margin: 0.5em 0 0 0  
+
     &--buttons
         width: 100%
         display: flex
         justify-content: center
         gap: 1em
-        margin: 0 0 0.5em 0
+        margin: 0 0 1em 0
 
         & button
+            position: relative
             border: none
             border-radius: 0.5em
             padding: 1em 1.5em
             background: #fff
-            transition: scale 0.25s
+            transition: scale 0.25s, padding 0.25s
             cursor: pointer
+            z-index: 1
+
+            & img
+                position: absolute
+                top: 50%
+                right: 0.25em
+                translate: 0 -50%
+                opacity: 0
+                height: 75%
+                transition: 0.25s
 
             &:hover
                 scale: 1.2  
+                padding: 1em 4em 1em 1.5em
+                z-index: 2
+
+                & img
+                    opacity: 0.8
             
             & *
                 color: #000
@@ -293,6 +310,15 @@
             grid-template-columns: 1fr
             grid-template-rows: repeat(2, 1fr)
             padding: 0px !important
+
+        &--buttons
+            & button
+                &:hover
+                    padding: 1em 1.5em
+                    scale: 1
+
+                & img
+                    display: none
 
     .Technologies-section
         &--container img
