@@ -216,7 +216,7 @@
 
     &--content
         display: grid
-        grid-auto-rows: 20em //min-content
+        // grid-auto-rows: 20em //min-content
         grid-template-columns: 2fr 2fr
         direction: ltr
 
@@ -231,6 +231,33 @@
             text-align: left
             transition-property: background, color
             transition-duration: 0.25s
+
+    &--buttons
+        width: 100%
+        display: flex
+        justify-content: center
+        gap: 1em
+        margin: 0 0 0.5em 0
+
+        & button
+            border: none
+            border-radius: 0.5em
+            padding: 1em 1.5em
+            background: #fff
+            transition: scale 0.25s
+            cursor: pointer
+
+            &:hover
+                scale: 1.2  
+            
+            & *
+                color: #000
+
+            &.apt
+                background: #00f
+
+                & * 
+                    color: #fff
 
 .Technologies-section
     &--container
