@@ -10,7 +10,8 @@ const SiteBuilderAdvertisementSection = () =>
             </h1>
             <div className="SiteBuilderAdvertisement-section--content">
                 <div className="SiteBuilderAdvertisement-section--card">
-                    <p>Shoot me a message with a brief description of your idea, your full name, and contact (email, number, etc.) if your interested and I'll get back to you ASAP! Or book an appointment with me based upon my availability. Just click the button below to get started!</p>
+                    <h3>★ Full-Code or No-Code!</h3>
+                    <p>Shoot me a <b>message</b> with a brief description of your idea, your full name, and contact (email, number, etc.). If you want your programmer, designer, and stylizer all in one person, I'm your helping hand! I work in <b>all budget ranges!</b> if your interested just <b>message</b> me and I'll get back to you <b>ASAP</b>! Or book an <b>appointment</b> with me based upon my availability.<br/><br/>Just click the button below to get started!</p>
                 </div>
                 <div className="SiteBuilderAdvertisement-section--card">
 

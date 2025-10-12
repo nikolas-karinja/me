@@ -198,21 +198,29 @@
         border-radius: 1em
         background: rgba($color-background-dark, 0.75)
         overflow: hidden
-        padding: 1em
+        padding: 0 1em 1em 1em
         text-align: left
         transition-property: background, color
         transition-duration: 0.25s
 
         & h1
+            width: calc(100% + 0.5em)
             margin-top: 0 !important
+            margin-left: -0.25em
+            letter-spacing: 0.05em
+            padding: 0.125em 0
+            background: url("../img/art/caution_tape.svg")
+            background-size: 1em
+            animation: siteBuilderAdvertHeaderScroll 1s linear infinite
+            text-shadow: -0.05em -0.05em 0 #000, 0.05em -0.05em 0 #000, -0.05em 0.05em 0 #000, 0.05em 0.05em 0 #000
 
     &--content
         display: grid
         grid-auto-rows: 20em //min-content
-        grid-template-columns: 2fr 20em
+        grid-template-columns: 2fr 2fr
         direction: ltr
 
-        margin: 0.5em 0 0 0  
+        margin: 1em 0 0 0  
 
         &--card
             position: relative
@@ -252,6 +260,19 @@
             grid-template-rows: repeat(2, 1fr)
             padding: 0px !important
 
+    .SiteBuilderAdvertisement-section
+        &--content
+            grid-auto-flow: column
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(2, 1fr)
+            padding: 0px !important
+
     .Technologies-section
         &--container img
             height: 6em
+
+@keyframes siteBuilderAdvertHeaderScroll
+    0%
+        background-position-x: 0
+    100%
+        background-position-x: 1em
