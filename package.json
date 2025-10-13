@@ -5,6 +5,7 @@
   	"proxy": "http://localhost:3000",
   	"homepage": "https://nikolaskarinja.com",
   	"dependencies": {
+  	  	"@emailjs/browser": "^4.4.1",
   	  	"@react-three/drei": "^9.70.4",
   	  	"@react-three/fiber": "^8.14.1",
   	  	"@testing-library/jest-dom": "^5.17.0",
