@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e1621cf.css",
-    "main.js": "/static/js/main.34c06de3.js",
+    "main.css": "/static/css/main.9392d64f.css",
+    "main.js": "/static/js/main.48669a5d.js",
     "static/media/ttt3d-1.gif": "/static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
     "static/media/suit-1.png": "/static/media/suit-1.ad3d4140ba00c9c87a39.png",
     "static/media/empty_warehouse_01_1k.hdr": "/static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
@@ -33,10 +33,14 @@
     "static/media/stripe.svg": "/static/media/stripe.8f2090065014c1f44ae6f13167c4ad1a.svg",
     "static/media/sass.svg": "/static/media/sass.8ffb735005889de0b45e940f39fdbb65.svg",
     "static/media/trello.svg": "/static/media/trello.c01cd3dfdca9c80fba7606b93f578eec.svg",
+    "static/media/message_me.svg": "/static/media/message_me.5134e768598587775064fe4ae73ef678.svg",
     "static/media/close.svg": "/static/media/close.bca7ddc868062a2c35ea1e939e3a4444.svg",
     "static/media/js.svg": "/static/media/js.06ae69b2816e2334455df0048c71814a.svg",
+    "static/media/send.svg": "/static/media/send.fdb86ec49566b1e0776e18a637d2dd76.svg",
     "static/media/github.svg": "/static/media/github.d628ec779935f40a78e415abeec92e1c.svg",
+    "static/media/book_appointment.svg": "/static/media/book_appointment.d91333af899258b3f6477bce3a149405.svg",
     "static/media/socketio.svg": "/static/media/socketio.aa27363bb92247b80255c7bd11b30248.svg",
+    "static/media/loading.svg": "/static/media/loading.aacd1154dbdc057cfe78850b4d1af1ae.svg",
     "static/media/npm.svg": "/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.8fb909cd22d240bda3e7f7ffd166b907.svg",
     "static/media/threejs.svg": "/static/media/threejs.86d78664e0c77bfe65ddacffe868a038.svg",
@@ -44,12 +48,14 @@
     "static/media/menu.svg": "/static/media/menu.200fe1d876c12e08a32abd224e71dd49.svg",
     "static/media/html5.svg": "/static/media/html5.5804150e47fbeb132a5d2688f08ce4c8.svg",
     "static/media/instagram.svg": "/static/media/instagram.f627c0614b79981f9ddbe9b968113335.svg",
+    "static/media/caution_tape.svg": "/static/media/caution_tape.f7a94ee1a91254e0570a.svg",
+    "static/media/white_blue_arrow_pattern.svg": "/static/media/white_blue_arrow_pattern.cf5db159d4792fd9c240.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.3a03708e42481565259f85329d20b695.svg",
-    "main.4e1621cf.css.map": "/static/css/main.4e1621cf.css.map",
-    "main.34c06de3.js.map": "/static/js/main.34c06de3.js.map"
+    "main.9392d64f.css.map": "/static/css/main.9392d64f.css.map",
+    "main.48669a5d.js.map": "/static/js/main.48669a5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e1621cf.css",
-    "static/js/main.34c06de3.js"
+    "static/css/main.9392d64f.css",
+    "static/js/main.48669a5d.js"
   ]
 }

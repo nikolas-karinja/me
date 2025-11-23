@@ -30,6 +30,7 @@ const ExternalMenu = () =>
                     <LibNavigationLink name='react-router-dom' />
                     <LibNavigationLink name='@react-three/fiber' />
                     <LibNavigationLink name='@react-three/drei' />
+                    <LibNavigationLink name="@emailjs/browser" />
                     <LibNavigationLink name='framer-motion' />
                     <LibNavigationLink name='sass' />
                 </div>

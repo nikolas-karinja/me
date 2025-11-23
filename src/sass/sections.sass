@@ -1,5 +1,86 @@
 @import './variables'
 
+.ContactMessageMe-section
+    &--container
+        position: relative
+
+        width: calc(100% - 2em)
+
+        border: solid 1px $color-border
+        border-radius: 1em
+        background: rgba($color-background-dark, 0.75)
+        overflow: hidden
+        padding: 0 1em 0 1em
+        text-align: left
+
+        & h1
+            width: calc(100% + 0.5em)
+            margin-top: 0 !important
+            margin-left: -0.25em
+            letter-spacing: 0.05em
+            padding: 0.125em 0
+            background: url("../img/art/white_blue_arrow_pattern.svg")
+            background-size: 1.25em
+            background-position: auto center
+            animation: contactMessageMeHeaderScroll 1s linear infinite
+            text-shadow: -0.05em -0.05em 0 #000, 0.05em -0.05em 0 #000, -0.05em 0.05em 0 #000, 0.05em 0.05em 0 #000
+
+    &--content
+        display: grid
+        grid-auto-rows: auto
+        grid-template-columns: 1fr 1fr
+        direction: ltr
+
+    &--card
+        position: relative
+
+        overflow: hidden
+        text-align: left
+        transition-property: background, color
+        transition-duration: 0.25s
+
+        & h3.title
+            margin: 0.75em 0 0 0  
+
+    &--buttons
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        gap: 1em
+        margin: 1em 0 1em 0
+    
+        & a
+            text-decoration: none
+
+        & button
+            position: relative
+            border: none
+            border-radius: 0.5em
+            padding: 1em 1.5em
+            background: #fff
+            transition: scale 0.25s, padding 0.25s
+            cursor: pointer
+            z-index: 1
+
+            & img
+                position: absolute
+                top: 50%
+                right: 0.25em
+                translate: 0 -50%
+                opacity: 0
+                height: 75%
+                transition: 0.25s
+
+            &:hover
+                padding: 1em 4em 1em 1.5em
+                z-index: 2
+
+                & img
+                    opacity: 0.8
+            
+            & *
+                color: #000
+
 .Packages-section
     &--container
         width: calc(100% - 2em)
@@ -380,7 +461,6 @@
         position: relative
 
         overflow: hidden
-        padding: 1em
         text-align: left
         transition-property: background, color
         transition-duration: 0.25s
@@ -394,6 +474,9 @@
         justify-content: center
         gap: 1em
         margin: 0 0 1em 0
+    
+        & a
+            text-decoration: none
 
         & button
             position: relative
@@ -452,6 +535,25 @@
             display: inline-block !important
 
 @media screen and (max-width: 1080px)
+    .ContactMessageMe-section
+        &--content
+            grid-auto-flow: column
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(2, 1fr)
+            padding: 0px !important
+
+        &--buttons
+            justify-content: center
+            margin: 0.5em 0 1em 0
+
+            & button
+                &:hover
+                    padding: 1em 1.5em
+                    scale: 1
+
+                & img
+                    display: none
+
     .Projects-section
         &--row
             grid-auto-flow: column
@@ -488,6 +590,12 @@
     .Technologies-section
         &--container img
             height: 6em
+
+@keyframes contactMessageMeHeaderScroll
+    0%
+        background-position-x: 0
+    100%
+        background-position-x: 1.25em
 
 @keyframes siteBuilderAdvertHeaderScroll
     0%
