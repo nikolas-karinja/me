@@ -18,6 +18,7 @@ const InternalMenu = () =>
                 <div className='Aside-module--pages'>
                     <PageNavigationLink path={ '/' } name={ 'Welcome' } />
                     <PageNavigationLink path={ '/projects' } name={ 'Projects' } />
+                    <PageNavigationLink path={ '/services' } name={ 'Services' } />
                     {/* <PageNavigationLink path={ '/products' } name={ 'Products' } />
                     <PageNavigationLink path={ '/blog' } name={ 'Blog' } /> */}
                     <PageNavigationLink path={ '/background' } name={ 'Background' } />
