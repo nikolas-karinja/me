@@ -17,7 +17,7 @@ const MessageSection = () =>
     {
         e.preventDefault()
 
-        const _serviceId = "service_6bx2auv"
+        const _serviceId = "service_e31uxjh"
         const _templateId = "template_o085kfa"
         const _publicKey = "6h7sa3iBLRCpPxZs2"
 
@@ -89,6 +89,7 @@ const MessageSection = () =>
                     <select onChange={(e) => setService(e.target.value)}>
                         <option value={"Website"}>Website</option>
                         <option value={"3D WebApp"}>3D WebApp</option>
+                        <option value={"Music Score"}>Music Score</option>
                     </select>
                     <h3 className="title">★ Name</h3>
                     <input onChange={(e) => setName(e.target.value)} 

@@ -80,7 +80,7 @@ export const INFO_CARDS = {
         },
         {
             title   : 'Email',
-            primary : 'direct@nikolaskarinja.com',
+            primary : 'me@nikolaskarinja.com',
             info    : `This is the traditional way to get in contact with me. This email is used for all forms of my business.`,
             model   : <IBMPC5150Model 
                 scale={1.5} />

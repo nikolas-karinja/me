@@ -1,0 +1,20 @@
+service ID: service_6bx2auv
+
+subject: New service inquiry from {{from_name}}
+
+content:
+Hello {{to_name}},
+
+You got a new message regarding a service from {{from_name}}
+
+Service: {{service}}
+Email: {{from_email}}
+Phone: {{from_phone}}
+{{message}}
+
+to email: me@nikolaskarinja.com
+from name: {{from_name}}
+from email: (check) use default email address
+reply to: {{reply_to}}
+
+template ID: template_o085kfa

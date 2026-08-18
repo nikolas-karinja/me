@@ -514,6 +514,109 @@
                 & * 
                     color: #fff
 
+.ServiceCard-section
+    &--container
+        position: relative
+
+        width: calc(100% - 2em)
+
+        border: solid 1px $color-border
+        border-radius: 1em
+        background: rgba($color-background-dark, 0.75)
+        overflow: hidden
+        padding: 0 1em 0 1em
+        text-align: left
+
+        & h1
+            width: calc(100% + 0.5em)
+            margin-top: 0 !important
+            margin-left: -0.25em
+            letter-spacing: 0.05em
+            padding: 0.125em 0
+            background: url("../img/art/caution_tape.svg")
+            background-size: 1em
+            animation: siteBuilderAdvertHeaderScroll 1s linear infinite
+            text-shadow: -0.05em -0.05em 0 #000, 0.05em -0.05em 0 #000, -0.05em 0.05em 0 #000, 0.05em 0.05em 0 #000
+
+            &.threedWebApp
+                background: url("../img/art/3d_blocks_pattern.png")
+                background-size: 2em 1.5em
+                background-repeat: repeat
+                animation: threedWebAppHeaderScroll 4s linear infinite
+
+            &.musicScores
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+                background-size: 400% 400%
+                animation: musicScoresHeaderScroll 15s ease infinite
+
+    &--content
+        display: grid
+        grid-auto-rows: auto
+        grid-template-columns: 1fr 1fr 0.6fr
+        direction: ltr
+
+        &.flipped
+            direction: rtl
+
+    &--card
+        position: relative
+
+        overflow: hidden
+        text-align: left
+        transition-property: background, color
+        transition-duration: 0.25s
+
+        & h3.title
+            margin: 0.5em 0 0 0
+
+    &--buttons
+        width: 100%
+        display: flex
+        justify-content: flex-end !important
+        align-items: flex-end
+        flex-direction: column
+        gap: 1em
+        margin: 1em 0 0 0
+    
+        & a
+            width: auto !important
+            text-decoration: none
+
+        & button
+            position: relative
+            border: none
+            border-radius: 0.5em
+            padding: 1em 1.5em
+            background: #fff
+            transition: scale 0.25s, padding 0.25s
+            cursor: pointer
+            z-index: 1
+
+            & img
+                position: absolute
+                top: 50%
+                right: 0.25em
+                translate: 0 -50%
+                opacity: 0
+                height: 75%
+                transition: 0.25s
+
+            &:hover
+                padding: 1em 4em 1em 1.5em
+                z-index: 2
+
+                & img
+                    opacity: 0.8
+            
+            & *
+                color: #000
+
+            &.sc
+                background: #00f
+
+                & * 
+                    color: #fff
+
 .Technologies-section
     &--container
         width: calc(100% - 2em)
@@ -591,6 +694,14 @@
         &--container img
             height: 6em
 
+@keyframes musicScoresHeaderScroll
+    0%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+
 @keyframes contactMessageMeHeaderScroll
     0%
         background-position-x: 0
@@ -602,6 +713,14 @@
         background-position-x: 0
     100%
         background-position-x: 1em
+
+@keyframes threedWebAppHeaderScroll
+    0%
+        background-position-x: 0
+        background-position-y: 0
+    100%
+        background-position-x: 2em
+        background-position-y: -1.5em
 
 @keyframes rotateFull
     0%
