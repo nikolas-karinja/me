@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.d19b1ea4.css",
-    "main.js": "/static/js/main.df16b34f.js",
+    "main.js": "/static/js/main.e995465b.js",
     "static/media/ttt3d-1.gif": "/static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
     "static/media/suit-1.png": "/static/media/suit-1.ad3d4140ba00c9c87a39.png",
     "static/media/empty_warehouse_01_1k.hdr": "/static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
     "static/media/infinipoly-1.png": "/static/media/infinipoly-1.ecf905928c3e29ef4635.png",
-    "static/media/home-name.png": "/static/media/home-name.e86949633d6f4117547f.png",
+    "static/media/home-name.png": "/static/media/home-name.0dc51c6167c48d93e272.png",
     "static/media/3chat-1.png": "/static/media/3chat-1.0e6ad11b946b0fc43aa1.png",
     "static/media/eyes-without-a-form.svg": "/static/media/eyes-without-a-form.b6a7b82e44f960d09435c258e9c1d22b.svg",
     "static/media/kidwithmullet.jpeg": "/static/media/kidwithmullet.eeea1a95cf29994424fa.jpeg",
@@ -55,10 +55,10 @@
     "static/media/white_blue_arrow_pattern.svg": "/static/media/white_blue_arrow_pattern.40da19446ac1483c68b8.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.3a03708e42481565259f85329d20b695.svg",
     "main.d19b1ea4.css.map": "/static/css/main.d19b1ea4.css.map",
-    "main.df16b34f.js.map": "/static/js/main.df16b34f.js.map"
+    "main.e995465b.js.map": "/static/js/main.e995465b.js.map"
   },
   "entrypoints": [
     "static/css/main.d19b1ea4.css",
-    "static/js/main.df16b34f.js"
+    "static/js/main.e995465b.js"
   ]
 }
