@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7820f500.css",
-    "main.js": "/static/js/main.bf06d6a9.js",
+    "main.css": "/static/css/main.254d7c48.css",
+    "main.js": "/static/js/main.99982634.js",
     "static/media/ttt3d-1.gif": "/static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
     "static/media/test_4.gif": "/static/media/test_4.59ee6404187723cc6b2c.gif",
-    "static/media/suit-1.png": "/static/media/suit-1.ad3d4140ba00c9c87a39.png",
+    "static/media/goth_light_nj.png": "/static/media/goth_light_nj.8a7a176208fb7b9227a5.png",
     "static/media/empty_warehouse_01_1k.hdr": "/static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
     "static/media/infinipoly-1.png": "/static/media/infinipoly-1.ecf905928c3e29ef4635.png",
+    "static/media/lean_2.png": "/static/media/lean_2.222905f617a06f36f6e8.png",
     "static/media/3chat-1.png": "/static/media/3chat-1.0e6ad11b946b0fc43aa1.png",
     "static/media/eyes-without-a-form.svg": "/static/media/eyes-without-a-form.b6a7b82e44f960d09435c258e9c1d22b.svg",
     "static/media/home-name.png": "/static/media/home-name.bc012580ad3a0e9a7481.png",
-    "static/media/kidwithmullet.jpeg": "/static/media/kidwithmullet.eeea1a95cf29994424fa.jpeg",
     "static/media/polycity-1.png": "/static/media/polycity-1.7f8b01c8cdee8052d8d0.png",
     "static/media/octavia.png": "/static/media/octavia.7f292438cd4beaf67116.png",
     "static/media/latest_work-title.png": "/static/media/latest_work-title.e71b17dfaf81bb018d25.png",
@@ -56,11 +56,11 @@
     "static/media/caution_tape.svg": "/static/media/caution_tape.ff9b46e7588630d47a79.svg",
     "static/media/white_blue_arrow_pattern.svg": "/static/media/white_blue_arrow_pattern.40da19446ac1483c68b8.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.3a03708e42481565259f85329d20b695.svg",
-    "main.7820f500.css.map": "/static/css/main.7820f500.css.map",
-    "main.bf06d6a9.js.map": "/static/js/main.bf06d6a9.js.map"
+    "main.254d7c48.css.map": "/static/css/main.254d7c48.css.map",
+    "main.99982634.js.map": "/static/js/main.99982634.js.map"
   },
   "entrypoints": [
-    "static/css/main.7820f500.css",
-    "static/js/main.bf06d6a9.js"
+    "static/css/main.254d7c48.css",
+    "static/js/main.99982634.js"
   ]
 }
