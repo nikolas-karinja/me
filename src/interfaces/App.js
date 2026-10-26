@@ -8,6 +8,7 @@ import DashboardPage from './pages/DashboardPage'
 import DefaultPage from './pages/DefaultPage'
 import MessagePage from './pages/MessagePage'
 import ServicesPage from './pages/ServicesPage'
+import LatestWorkPage from './pages/LatestWorkPage'
 
 const App = () =>
 {
@@ -19,6 +20,7 @@ const App = () =>
                     <Route path='/background' element={ <BackgroundPage /> } />
                     <Route path='/blog' element={ <DefaultPage /> } />
                     <Route path='/contact' element={ <ContactPage /> } />
+                    <Route path='/latestwork' element={ <LatestWorkPage /> } />
                     <Route path='/message' element={ <MessagePage /> } />
                     <Route path='/products' element={ <DefaultPage /> } />
                     <Route path='/projects' element={ <ProjectsPage /> } />

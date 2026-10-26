@@ -6,12 +6,17 @@ import { Model as SiteBuilderAdvert } from '../models/SiteBuilderAdvert'
 import { Link } from "react-router-dom"
 import { useEffect, useLayoutEffect, useRef, useState } from "react"
 
-const ServiceCard = ({content, flipped, model, avoidShowcase, title, titleAnimClass, initTitleBounceDelay}) =>
+const ServiceCard = ({content, bookCons, flipped, model, avoidShowcase, title, titleAnimClass, initTitleBounceDelay, centerButtons}) =>
 {
     const heightRef = useRef(null)
     const [height, setHeight] = useState(0)
 
     const _handleBookAppointment = () =>
+    {
+        alert("Feature not available yet :(")
+    }
+
+    const _handleViewShowcase = () =>
     {
         alert("Feature not available yet :(")
     }
@@ -51,7 +56,7 @@ const ServiceCard = ({content, flipped, model, avoidShowcase, title, titleAnimCl
                 </div>
                 <div className="ServiceCard-section--card"
                     style={{height: `${height}px`}}>
-                    <div className="ServiceCard-section--buttons">
+                    <div className={`ServiceCard-section--buttons ${centerButtons ? "center" : ""}`}>
                         <Link to={"/message"}>
                             <button>
                                 <h3>Message Me!</h3>
@@ -61,10 +66,17 @@ const ServiceCard = ({content, flipped, model, avoidShowcase, title, titleAnimCl
                         </Link>
                         <button className="sc"
                             style={{display: avoidShowcase ? "none" : "block" }}
-                            onClick={_handleBookAppointment}>
+                            onClick={_handleViewShowcase}>
                             <h3>View Showcase</h3>
                             <img src={icon_bookAppointment}
                                 alt="View Showcase" />
+                        </button>
+                        <button className="bc"
+                            style={{display: bookCons ? "block" : "none" }}
+                            onClick={_handleBookAppointment}>
+                            <h3>Book Consultation</h3>
+                            <img src={icon_bookAppointment}
+                                alt="Book Consultation" />
                         </button>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import { SOUNDS } from '../core'
 import ExternalMenu from './ExternalMenu'
 import InternalMenu from './InternalMenu'
 
-const PageLayoutNormal = ({titleArtImg, children}) =>
+const PageLayoutNormal = ({titleArtImg, constant, children}) =>
 {
     let _titleSound = null
 
@@ -20,7 +20,7 @@ const PageLayoutNormal = ({titleArtImg, children}) =>
     return (
         <>
             <div className='PageLayout-module--root'>
-                <div className='PageLayout-module--page'>
+                <div className={`PageLayout-module--page ${constant ? "constant" : ""}`}>
                     <article>
                         <img className='PageLayout-module--page--title'
                             src={titleArtImg}

@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser"
 
 const MessageSection = () =>
 {
-    const [_service, setService] = useState("Website")
+    const [_service, setService] = useState("Coding & AI Lessons")
     const [_name, setName] = useState("")
     const [_email, setEmail] = useState("")
     const [_phone, setPhone] = useState("")
@@ -17,9 +17,9 @@ const MessageSection = () =>
     {
         e.preventDefault()
 
-        const _serviceId = "service_e31uxjh"
+        const _serviceId = "service_4djn8kn"
         const _templateId = "template_o085kfa"
-        const _publicKey = "6h7sa3iBLRCpPxZs2"
+        const _publicKey = "sl7Tf0M-Cwrsx2xvm"
 
         const _templateParams = {
             service: _service,
@@ -87,6 +87,7 @@ const MessageSection = () =>
                 <div className="Message-section--card">
                     <h3 className="title">★ Service</h3>
                     <select onChange={(e) => setService(e.target.value)}>
+                        <option value={"Coding & AI Lessons"}>Coding & AI Lessons</option>
                         <option value={"Website"}>Website</option>
                         <option value={"3D WebApp"}>3D WebApp</option>
                         <option value={"Music Score"}>Music Score</option>

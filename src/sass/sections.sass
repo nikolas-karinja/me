@@ -81,6 +81,42 @@
             & *
                 color: #000
 
+.LatestWorkTV-section
+    position: relative
+    width: 100%
+    height: 80%
+
+    &--css3d
+        position: relative
+        width: 13em
+        height: 10em
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        user-select: none
+        background: #fff
+
+        & .wip
+            display: flex
+            align-items: center
+            height: 2em
+            font-family: $font-family-pixel
+            transition: scale 0.5s
+
+            &:hover
+                scale: 1.4
+
+            & img
+                height: 100%
+
+        & img.bg
+            position: absolute
+            width: 100%
+
+        & button
+            animation: rotateFull 3s infinite linear
+
 .Packages-section
     &--container
         width: calc(100% - 2em)
@@ -366,6 +402,10 @@
                 appearance: base-select
 
             &::picker-icon
+                position: absolute
+                right: 0
+                top: 50%
+                translate: -0.75em -50%
                 color: #fff
                 transition: 0.25s rotate
 
@@ -551,8 +591,8 @@
 
     &--content
         display: grid
-        grid-auto-rows: auto
-        grid-template-columns: 1fr 1fr 0.6fr
+        grid-auto-flow: column
+        grid-auto-columns: 1fr 1fr 0.6fr
         direction: ltr
 
         &.flipped
@@ -577,6 +617,11 @@
         flex-direction: column
         gap: 1em
         margin: 1em 0 0 0
+
+        &.center
+            height: 100%
+            justify-content: center !important
+            margin: 0
     
         & a
             width: auto !important
@@ -613,6 +658,12 @@
 
             &.sc
                 background: #00f
+
+                & * 
+                    color: #fff
+
+            &.bc
+                background: #0a0
 
                 & * 
                     color: #fff
@@ -656,6 +707,18 @@
 
                 & img
                     display: none
+
+    .ServiceCard-section
+        &--content
+            grid-auto-flow: row
+            grid-template-rows: 1fr 1fr 5em
+
+        &--buttons
+            flex-direction: row
+            justify-content: center !important
+
+            &.center
+                height: auto
 
     .Projects-section
         &--row

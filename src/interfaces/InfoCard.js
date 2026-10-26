@@ -4,7 +4,7 @@ import { ANIM_DELAY, SOUNDS } from '../core'
 import CanvasSetup from './CanvasSetup'
 import { useState } from 'react'
 
-const InfoCard = ({title, primary, text, model, spin, index}) =>
+const InfoCard = ({onClick, title, primary, sub, text, model, spin, index}) =>
 {
     const [pointerEntered, setPointerEntered] = useState(false)
 
@@ -20,11 +20,18 @@ const InfoCard = ({title, primary, text, model, spin, index}) =>
         setPointerEntered(false)
     }
 
+    const _onClick = (e) =>
+    {
+        if (onClick)
+            onClick(e)
+    }
+
     return(
         <div className='InfoCard-module'
             style={{animationDelay: index ? `-${ index * ANIM_DELAY.homeCards }s` : '0s'}}
             onPointerEnter={_onPointerEnter}
-            onPointerLeave={_onPointerLeave}>
+            onPointerLeave={_onPointerLeave}
+            onClick={_onClick}>
             <h3 className='text-left'>
                 {`${pointerEntered ? "★ " : ""}`}{(title ? title : 'A Title').toUpperCase()}
             </h3>
@@ -34,6 +41,9 @@ const InfoCard = ({title, primary, text, model, spin, index}) =>
                     src={ icon_clickable }
                     alt='Clickable' />}
             <div className='divider' />
+            <div className='InfoCard-module--sub'>
+                {sub ? sub : ""}
+            </div>
             <div className='InfoCard-module--content'>
                 <div className='InfoCard-module--canvas'>
                     <CanvasSetup 

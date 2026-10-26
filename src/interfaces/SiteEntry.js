@@ -8,6 +8,7 @@ const SiteEntry = () =>
     const _onPointerUp = () =>
     {
         SOUNDS.welcome.play()
+        SOUNDS.bgMusic.play()
 
         setVisible(false)
     }

@@ -23,7 +23,7 @@ const SiteBuilderAdvertisementSection = () =>
                     <h3 className="title">★ Full-Code or No-Code!</h3>
                     <h2>FOR ANY BUDGET!</h2>
                     <p>Shoot me a <b>message</b> with a brief description of your idea, your full name, and contact (email, number, etc.). If you want your programmer, designer, and stylizer all in one person, I'm your helping hand! I work in <b>all budget ranges!</b> if your interested just <b>message</b> me and I'll get back to you <b>ASAP!</b> Or book an <b>appointment</b> with me based upon my availability.</p>
-                    <p className="text-center"><b>Click one below to get started!</b></p>
+                    <p className="text-center"><b>Click below to get started!</b></p>
                     <div className="SiteBuilderAdvertisement-section--buttons">
                         <Link to={"/message"}>
                             <button>
@@ -32,12 +32,12 @@ const SiteBuilderAdvertisementSection = () =>
                                     alt="Message Me" />
                             </button>
                         </Link>
-                        <button className="apt"
+                        {/* <button className="apt"
                             onClick={_handleBookAppointment}>
                             <h3>Book Appointment</h3>
                             <img src={icon_bookAppointment}
                                 alt="Book Apt" />
-                        </button>
+                        </button> */}
                     </div>
                 </div>
                 <div className="SiteBuilderAdvertisement-section--card">

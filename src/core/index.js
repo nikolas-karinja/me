@@ -65,14 +65,24 @@ export const SOUNDS = {
     welcome: new Howl({
         src: ["./audio/sfx/welcome.mp3"]
     }),
+    tvButtonSmall: new Howl({
+        src: ["./audio/sfx/tv_button_small.mp3"]
+    }),
+    tvButtonBig: new Howl({
+        src: ["./audio/sfx/tv_button_big.mp3"]
+    }),
+    bgMusic: new Howl({
+        loop: true,
+        volume: 0.25,
+        src: ["./audio/music/3chat.mp3"]
+    }),
 }
 
 export const INFO_CARDS = {
     Contact: [
         {
             title   : 'Phone',
-            primary : '(310) 902-4760',
-            info    : 'This is the most instant way to access me.',
+            info    : <>This is the most instant way to access me. I'm available from <b>9am to 5pm PST</b><br /><br /><b><a href="tel:+13109024760">Call me now!</a></b></>,
             model   : <OldMobilePhoneModel 
                 position={[0, -1, 0]}
                 rotation={[-0.5, -0.5, -0.35]}
@@ -80,15 +90,14 @@ export const INFO_CARDS = {
         },
         {
             title   : 'Email',
-            primary : 'me@nikolaskarinja.com',
-            info    : `This is the traditional way to get in contact with me. This email is used for all forms of my business.`,
+            sub     : "nikolas.aleksandr.karinja@gmail.com",
+            info    : <>This is the traditional way to get in contact with me. This email is used for all forms of my business.</>,
             model   : <IBMPC5150Model 
                 scale={1.5} />
         },
         {
             title   : 'Social Media',
-            primary : '@kidwithmullet',
-            info    : `This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach me via Instagram.`,
+            info    : <>This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach me via Instagram<br /><br /><b>Will be available by 10/19!</b></>,
             model   : <InstaCameraModel 
                 position={[0, 0.5, 0]}
                 rotation={[0.35, -0.5, 0]}
@@ -226,7 +235,7 @@ export const PROJECTS = {
         info   : <>Based on an ECS architecture, Three.js visuals, and Rapier physics. Easy to use with React. Just add the component into your project to start.<br /><br />Documentation in progress.<br /><br />Built with my publicly available NPM packages.</>,
         techs  : ['reactjs', 'threejs', 'howlerjs'],
         images : [sc_octavia1],
-        trello : "https://trello.com/b/XI1UmCcK/octavia-engine",
+        trello : "https://trello.com/invite/b/66f51bb1af7293ce657d4ba6/ATTI311552d09b8356685b5d0f110025cb2aEFFF1CF5/octavia-engine",
         link   :'https://octavia-engine-c2jocsedk-nikolas-karinjas-projects.vercel.app/',
     },
     'infinipoly': {
@@ -234,29 +243,31 @@ export const PROJECTS = {
         info   : <>An infinite terrain generator utilizing LOD and Simplex Noise. It uses web-workers to make the terrain generation faster.<br /><br />Requires a mid-tier graphics card and isn't optimised for mobile devices.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_infinipoly1],
-        trello : "https://trello.com/b/TKve9Vzw/infinipoly",
-        link   : 'https://infinipoly-ede85dfe16ba.herokuapp.com/',
+        trello : "https://trello.com/invite/b/67ddb94141b93724c1107f8a/ATTIfdde1be6b0e510de206213ac4a2ead743F476DCF/infinipoly",
+        link   : 'https://nikolas-karinja.github.io/infinipoly/',
     },
     'polycity': {
         name   : 'PolyCity',
         info   : <>A simulator game about building communities with politics. You decide wether your administration is corrupt or virtuous. Pick a fantasy political-party and keep it in power to avoid losing the elections. Inspired by ThinMatrix's city-builder series.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs'],
         images : [sc_polycity1],
-        trello : "https://trello.com/b/DaALo9a4/polycity",
-        link   : 'https://raw.githack.com/nikolas-karinja/polycity/main/build/index.html',
+        trello : "https://trello.com/invite/b/678ad4f81562d13ce32a2456/ATTI792fd11424ec0a8edfb0ca4716343acf6AD64B98/polycity",
+        link   : 'https://nikolas-karinja.github.io/polycity/',
     },
     '3chat': {
         name   : '3Chat',
         info   : <>A simple chat app but with 3D avatars. Pick an avatar, create or join a chat room and talk to other players. Still working out the room features. I want to add a feature where the players can play 3D games with each other.<br /><br />Built using Octavia.</>,
         techs  : ['octavia', 'reactjs', 'threejs', 'nodejs', 'socketio'],
         images : [sc_3chat1],
+        trello : "https://trello.com/invite/b/6806c819472cc93aaccbcb5e/ATTI329fabfc8be2bcbd34b04d030f968dfb99B6C9AA/3chat",
+        link   : "https://threechat.onrender.com",
     },
     'ttt3d': {
         name   : 'Tic-Tac-Toe 3D!',
         info   : <>A web-based ai/hotseat tic-tac-toe game using WebGL. Done as a little challenge for myself in between college classes. Tested it with a couple coworkers and kids at my job and it was fun. It's just the game you know well.<br /><br />Works on mobile devices too!</>,
         techs  : ['reactjs', 'threejs', 'sass'],
         images : [sc_ttt3d1],
-        trello : "https://trello.com/b/rGVnQEm3/tic-tac-toe-3d",
+        trello : "https://trello.com/invite/b/67ddc797d52e2a5e75ee9593/ATTI61bae2c55156bddb894156c7d90194cbA1E49F7E/tic-tac-toe-3d",
         link   : 'https://nikolas-karinja.github.io/tictactoe-3d/build/index.html',
     },
 }

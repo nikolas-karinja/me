@@ -5,31 +5,29 @@
   	"proxy": "http://localhost:3000",
   	"homepage": "https://nikolaskarinja.com",
   	"dependencies": {
-  	  	"@emailjs/browser": "^4.4.1",
-  	  	"@react-three/drei": "^9.70.4",
-  	  	"@react-three/fiber": "^8.14.1",
-  	  	"@testing-library/jest-dom": "^5.17.0",
-  	  	"@testing-library/react": "^13.4.0",
-  	  	"@testing-library/user-event": "^13.5.0",
+  	  	"@emailjs/browser": "^5.0.3",
+  	  	"@isaac_ua/drei-html-fix": "^1.0.6",
+  	  	"@react-three/drei": "^10.7.9",
+  	  	"@react-three/fiber": "^9.8.2",
+  	  	"@testing-library/jest-dom": "^7.0.1",
+  	  	"@testing-library/react": "^16.3.3",
+  	  	"@testing-library/user-event": "^14.6.8",
   	  	"@types/react-router-dom": "^5.3.3",
-  	  	"framer-motion": "^10.16.4",
+  	  	"framer-motion": "^14.6.0",
   	  	"howler": "^2.2.4",
-  	  	"react": "^18.2.0",
-  	  	"react-dom": "^18.2.0",
-  	  	"react-router-dom": "^6.21.2",
+  	  	"react": "^19.3.1",
+  	  	"react-dom": "^19.3.1",
+  	  	"react-router-dom": "^7.18.4",
   	  	"react-scripts": "5.0.1",
-  	  	"sass": "^1.66.1",
-  	  	"typewriter-effect": "^2.21.0",
-  	  	"web-vitals": "^2.1.4"
+  	  	"sass": "^1.106.1",
+  	  	"typewriter-effect": "^3.3.0",
+  	  	"web-vitals": "^6.2.3"
   	},
   	"scripts": {
   	  	"start": "react-scripts start",
   	  	"build": "react-scripts build",
   	  	"test": "react-scripts test",
-  	  	"eject": "react-scripts eject",
-  	  	"predeploy": "npm run build",
-  	  	"deploy": "gh-pages -d build",
-  	  	"commit": "npm run deploy -- -m \"Deploy React app to GitHub Pages\""
+  	  	"eject": "react-scripts eject"
   	},
   	"eslintConfig": {
   	  	"extends": [

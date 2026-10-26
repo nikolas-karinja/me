@@ -5,7 +5,7 @@ import { Environment, OrbitControls, Float } from '@react-three/drei'
 import { Model as DefaultModel } from '../models/Default'
 import { SOUNDS } from '../core'
 
-const CanvasSetup = ({model, autoRotateSpeed}) =>
+const CanvasSetup = ({model, autoRotateSpeed, lightIntensity}) =>
 {
     const _rotateMult = Math.random() > 0.5 ? 1 : -1
 
@@ -23,7 +23,7 @@ const CanvasSetup = ({model, autoRotateSpeed}) =>
                 enableZoom={false}
                 autoRotate={true} />
             <directionalLight
-                intensity={3}
+                intensity={lightIntensity ? lightIntensity : 3}
                 position={[-0.25, 0, 1]} 
                 castShadow />
             <Float>

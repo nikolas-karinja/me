@@ -64,14 +64,14 @@ const MobileMenu = () =>
                     onClick={onMenuButtonClick}
                     path={'/projects'} 
                     name={'Projects'} />
-                {/* <MobileMenuLink 
-                    onClick={onMenuButtonClick}
-                    path={'/products'} 
-                    name={'Products'} />
                 <MobileMenuLink 
                     onClick={onMenuButtonClick}
-                    path={'/blog'} 
-                    name={'Blog'} /> */}
+                    path={'/latestwork'} 
+                    name={'Latest Work'} />
+                <MobileMenuLink 
+                    onClick={onMenuButtonClick}
+                    path={'/services'} 
+                    name={'Services'} />
                 <MobileMenuLink 
                     onClick={onMenuButtonClick}
                     path={'/background'} 

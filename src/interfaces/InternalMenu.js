@@ -1,4 +1,4 @@
-import profile_kidwithmullet from '../img/profile/kidwithmullet.jpeg'
+import profile_kidwithmullet from '../img/profile/goth_light_nj.png'
 
 import PageNavigationLink from './PageNavigationLink'
 
@@ -18,6 +18,7 @@ const InternalMenu = () =>
                 <div className='Aside-module--pages'>
                     <PageNavigationLink path={ '/' } name={ 'Welcome' } />
                     <PageNavigationLink path={ '/projects' } name={ 'Projects' } />
+                    <PageNavigationLink path={ '/latestwork' } name={ 'Latest Work' } />
                     <PageNavigationLink path={ '/services' } name={ 'Services' } />
                     {/* <PageNavigationLink path={ '/products' } name={ 'Products' } />
                     <PageNavigationLink path={ '/blog' } name={ 'Blog' } /> */}

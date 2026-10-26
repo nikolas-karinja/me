@@ -1,7 +1,7 @@
 import art_backgroundTitle from '../../img/background-title.png'
 
 import TechnologiesSection from "../sections/TechnologiesSection"
-import { Model as IbmPc5150Model } from '../../models/IBMPC5150'
+import { Model as MeTV } from '../../models/MeTV'
 import SectionTitle from '../SectionTitle'
 import { setPageTitle } from '../../core/utils'
 import PageLayoutNormal from '../PageLayoutNormal'
@@ -17,10 +17,11 @@ const BackgroundPage = () =>
             titleArtImg={art_backgroundTitle}>
             <ThreeModelPageWrapper>
                 <CanvasSetup 
-                    model={<IbmPc5150Model
-                    position={[0, 0.5, 0]}
+                    lightIntensity={1}
+                    model={<MeTV
+                    position={[0, 0, 0]}
                     rotation={[0, 0.5, 0]}
-                    scale={2} />} />
+                    scale={0.7} />} />
             </ThreeModelPageWrapper>
             <p>
                 I have been working on software since I was 12. It all started because I was fascinated by old hardware in computers, mostly with the interest in how all of it functioned. At first I thought it would be relatively easy to break down because it was "ancient" technology. Soon I realized that under the hood was lines of data that I could barely comprehend. So what did I do? I learned to understand it.

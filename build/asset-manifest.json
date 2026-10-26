@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9dc5a974.css",
-    "main.js": "/static/js/main.ccf1e54e.js",
+    "main.css": "/static/css/main.11b1e80b.css",
+    "main.js": "/static/js/main.c16216a9.js",
     "static/media/ttt3d-1.gif": "/static/media/ttt3d-1.5ffa0044edf192bd9d3d.gif",
-    "static/media/suit-1.png": "/static/media/suit-1.ad3d4140ba00c9c87a39.png",
+    "static/media/test_4.gif": "/static/media/test_4.59ee6404187723cc6b2c.gif",
+    "static/media/goth_light_nj.png": "/static/media/goth_light_nj.8a7a176208fb7b9227a5.png",
     "static/media/empty_warehouse_01_1k.hdr": "/static/media/empty_warehouse_01_1k.f9cb5eb293a962487791.hdr",
     "static/media/infinipoly-1.png": "/static/media/infinipoly-1.ecf905928c3e29ef4635.png",
-    "static/media/home-name.png": "/static/media/home-name.e86949633d6f4117547f.png",
+    "static/media/lean_2.png": "/static/media/lean_2.222905f617a06f36f6e8.png",
     "static/media/3chat-1.png": "/static/media/3chat-1.0e6ad11b946b0fc43aa1.png",
     "static/media/eyes-without-a-form.svg": "/static/media/eyes-without-a-form.b6a7b82e44f960d09435c258e9c1d22b.svg",
-    "static/media/kidwithmullet.jpeg": "/static/media/kidwithmullet.eeea1a95cf29994424fa.jpeg",
+    "static/media/home-name.png": "/static/media/home-name.bc012580ad3a0e9a7481.png",
     "static/media/polycity-1.png": "/static/media/polycity-1.7f8b01c8cdee8052d8d0.png",
     "static/media/octavia.png": "/static/media/octavia.7f292438cd4beaf67116.png",
+    "static/media/latest_work-title.png": "/static/media/latest_work-title.e71b17dfaf81bb018d25.png",
     "static/media/background-title.png": "/static/media/background-title.a59e0982ef632a1f06ed.png",
     "static/media/projects-title.png": "/static/media/projects-title.c40131cc1afdfba5a8fe.png",
     "static/media/message_me-title.png": "/static/media/message_me-title.9f4d708bd2583aa02c5e.png",
@@ -21,6 +23,7 @@
     "static/media/octavia-1.png": "/static/media/octavia-1.da29a696bf730136c202.png",
     "static/media/archive.svg": "/static/media/archive.9900ab6c52575a81336f2116bec062e9.svg",
     "static/media/project.svg": "/static/media/project.1a25f9548029c0523a4dc8802a6d79ad.svg",
+    "static/media/hourglass_retro.gif": "/static/media/hourglass_retro.4b643ad1bc6314016844.gif",
     "static/media/tool.svg": "/static/media/tool.8996ef994abe4e6cd23bb5786f32bf19.svg",
     "static/media/pointer-right.svg": "/static/media/pointer-right.5897ed3951b46d2842f26feb6a0b1568.svg",
     "static/media/howlerjs.svg": "/static/media/howlerjs.51e417364a6abcec8cb679053b9d1b7f.svg",
@@ -53,11 +56,11 @@
     "static/media/caution_tape.svg": "/static/media/caution_tape.ff9b46e7588630d47a79.svg",
     "static/media/white_blue_arrow_pattern.svg": "/static/media/white_blue_arrow_pattern.40da19446ac1483c68b8.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.3a03708e42481565259f85329d20b695.svg",
-    "main.9dc5a974.css.map": "/static/css/main.9dc5a974.css.map",
-    "main.ccf1e54e.js.map": "/static/js/main.ccf1e54e.js.map"
+    "main.11b1e80b.css.map": "/static/css/main.11b1e80b.css.map",
+    "main.c16216a9.js.map": "/static/js/main.c16216a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dc5a974.css",
-    "static/js/main.ccf1e54e.js"
+    "static/css/main.11b1e80b.css",
+    "static/js/main.c16216a9.js"
   ]
 }

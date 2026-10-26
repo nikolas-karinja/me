@@ -3,7 +3,7 @@ import icon_instagram from '../img/icons/instagram.svg'
 import icon_linkedin from '../img/icons/linkedin.svg'
 import icon_npm from '../img/icons/npm.svg'
 
-import photo_suit1 from '../img/photos/suit-1.png'
+import photo_suit1 from '../img/art/lean_2.png'
 
 import { LINKS } from '../core'
 import SocialsNavigationLink from './SocialsNavigationLink'
@@ -21,7 +21,7 @@ const ExternalMenu = () =>
                     <SocialsNavigationLink title='Github' linkUrl={ LINKS.GITHUB } iconUrl={ icon_github } />
                     <SocialsNavigationLink title='NPM' linkUrl={ LINKS.NPMJS } iconUrl={ icon_npm } />
                     <SocialsNavigationLink title='LinkedIn' linkUrl={ LINKS.LINKEDIN } iconUrl={ icon_linkedin } />
-                    <SocialsNavigationLink title='Instagram' linkUrl={ LINKS.INSTAGRAM } iconUrl={ icon_instagram } />
+                    {/* <SocialsNavigationLink title='Instagram' linkUrl={ LINKS.INSTAGRAM } iconUrl={ icon_instagram } /> */}
                 </div>
             </div>
             <div className='AsideColumnLayout-module--slot-bottom'>

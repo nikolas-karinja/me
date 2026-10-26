@@ -15,6 +15,8 @@ const InfoCards = ({className, data}) =>
                     title={i.title}
                     text={i.info}
                     primary={i.primary}
+                    sub={i.sub}
+                    onClick={i.onClick}
                     model={i.model} />
             })}
         </div>
