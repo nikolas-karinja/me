@@ -37,7 +37,7 @@ const MobileMenu = () =>
                 <MobileMenuSocialsLink title='Github' linkUrl={ LINKS.GITHUB } iconUrl={ icon_github } />
                 <MobileMenuSocialsLink title='NPM' linkUrl={ LINKS.NPMJS } iconUrl={ icon_npm } />
                 <MobileMenuSocialsLink title='LinkedIn' linkUrl={ LINKS.LINKEDIN } iconUrl={ icon_linkedin } />
-                <MobileMenuSocialsLink title='Instagram' linkUrl={ LINKS.INSTAGRAM } iconUrl={ icon_instagram } />
+                {/* <MobileMenuSocialsLink title='Instagram' linkUrl={ LINKS.INSTAGRAM } iconUrl={ icon_instagram } /> */}
             </div>
             <div className='MobileMenu-module--pageTitle'
                 id='mobile-page-title'>
