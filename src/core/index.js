@@ -97,7 +97,7 @@ export const INFO_CARDS = {
         },
         {
             title   : 'Social Media',
-            info    : <>This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach me via Instagram<br /><br /><b>Will be available by 10/19!</b></>,
+            info    : <>This is my prefered method of contact in regards to paid-partnerships, collaborations, and events. You can reach me via Instagram<br /><br /><b>Will be available by 11/6!</b></>,
             model   : <InstaCameraModel 
                 position={[0, 0.5, 0]}
                 rotation={[0.35, -0.5, 0]}
