@@ -4,6 +4,7 @@
   	"private": true,
   	"proxy": "http://localhost:3000",
   	"homepage": "https://nikolaskarinja.com",
+	"description": "Modern Creativity. Human Made",
   	"dependencies": {
   	  	"@emailjs/browser": "^5.0.3",
   	  	"@isaac_ua/drei-html-fix": "^1.0.6",
